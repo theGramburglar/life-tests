@@ -49,12 +49,36 @@ TEST_F(LifeFixture, test_cell_3) {
 }
 
 TEST_F(LifeFixture, test_cell_4) {
+  AbstractCell *p = new FredkinCell(false);
+  Cell g(p);
+	delete p;
+  Cell d;
+	ASSERT_FALSE(isDead(*(getP(d))));
+  d = g;
+	ASSERT_TRUE(isDead(*(getP(d))));
+	
+}
+
+TEST_F(LifeFixture, test_cell_5) {
   AbstractCell *p = new FredkinCell(true);
   Cell g(p);
-
+	delete p;
+	g.evolve(1);
   Cell d;
   d = g;
-  delete p;
+	FredkinCell* q = dynamic_cast<FredkinCell*>(getP(d));
+	const unsigned int a = getAge(*q);
+	ASSERT_EQ(a, 1);
+}
+
+TEST_F(LifeFixture, test_cell_6) {
+	Cell g;
+	g.evolve(0);
+	Cell h;
+	h = g;
+	const bool b = isDead(*(getP(h)));
+	ASSERT_TRUE(b);
+
 }
 
 /* >>/<< overload */
