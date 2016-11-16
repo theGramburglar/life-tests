@@ -1,38 +1,147 @@
-==41100== Memcheck, a memory error detector
-==41100== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
-==41100== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
-==41100== Command: ./TestLife
-==41100==
---41100-- run: /usr/bin/dsymutil "./TestLife"
+==4664== Memcheck, a memory error detector
+==4664== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==4664== Using Valgrind-3.12.0.SVN and LibVEX; rerun with -h for copyright info
+==4664== Command: ./TestLife
+==4664== 
 Running main() from gtest_main.cc
-[==========] Running 1 test from 1 test case.
+[==========] Running 53 tests from 3 test cases.
 [----------] Global test environment set-up.
-[----------] 1 test from LifeFixture
-[ RUN      ] LifeFixture.test
-[       OK ] LifeFixture.test (14 ms)
-[----------] 1 test from LifeFixture (25 ms total)
+[----------] 12 tests from CCFixture
+[ RUN      ] CCFixture.test_constructor_valid_dead
+[       OK ] CCFixture.test_constructor_valid_dead (16 ms)
+[ RUN      ] CCFixture.test_constructor_valid_live
+[       OK ] CCFixture.test_constructor_valid_live (3 ms)
+[ RUN      ] CCFixture.test_constructor_invalid_fc_dead
+[       OK ] CCFixture.test_constructor_invalid_fc_dead (64 ms)
+[ RUN      ] CCFixture.test_constructor_invalid_fc
+[       OK ] CCFixture.test_constructor_invalid_fc (3 ms)
+[ RUN      ] CCFixture.test_output
+[       OK ] CCFixture.test_output (9 ms)
+[ RUN      ] CCFixture.test_deadness
+[       OK ] CCFixture.test_deadness (4 ms)
+[ RUN      ] CCFixture.test_liveness
+[       OK ] CCFixture.test_liveness (3 ms)
+[ RUN      ] CCFixture.test_evolve_dead_to_alive
+[       OK ] CCFixture.test_evolve_dead_to_alive (7 ms)
+[ RUN      ] CCFixture.test_evolve_dead_stay_dead
+[       OK ] CCFixture.test_evolve_dead_stay_dead (5 ms)
+[ RUN      ] CCFixture.test_evolve_alive_stay_alive
+[       OK ] CCFixture.test_evolve_alive_stay_alive (4 ms)
+[ RUN      ] CCFixture.test_evolve_alive_turn_dead
+[       OK ] CCFixture.test_evolve_alive_turn_dead (6 ms)
+[ RUN      ] CCFixture.test_neighbor_validation
+[       OK ] CCFixture.test_neighbor_validation (25 ms)
+[----------] 12 tests from CCFixture (171 ms total)
+
+[----------] 24 tests from FCFixture
+[ RUN      ] FCFixture.test_constructor_valid_dead
+[       OK ] FCFixture.test_constructor_valid_dead (3 ms)
+[ RUN      ] FCFixture.test_constructor_valid_live
+[       OK ] FCFixture.test_constructor_valid_live (3 ms)
+[ RUN      ] FCFixture.test_constructor_invalid_cc_dead
+[       OK ] FCFixture.test_constructor_invalid_cc_dead (6 ms)
+[ RUN      ] FCFixture.test_constructor_invalid_cc
+[       OK ] FCFixture.test_constructor_invalid_cc (3 ms)
+[ RUN      ] FCFixture.test_output
+[       OK ] FCFixture.test_output (4 ms)
+[ RUN      ] FCFixture.test_deadness
+[       OK ] FCFixture.test_deadness (3 ms)
+[ RUN      ] FCFixture.test_liveness
+[       OK ] FCFixture.test_liveness (3 ms)
+[ RUN      ] FCFixture.test_evolve_alive_to_dead
+[       OK ] FCFixture.test_evolve_alive_to_dead (6 ms)
+[ RUN      ] FCFixture.test_evolve_alive_stay_alive
+[       OK ] FCFixture.test_evolve_alive_stay_alive (6 ms)
+[ RUN      ] FCFixture.test_evolve_dead_stay_dead
+[       OK ] FCFixture.test_evolve_dead_stay_dead (5 ms)
+[ RUN      ] FCFixture.test_evolve_dead_turn_alive
+[       OK ] FCFixture.test_evolve_dead_turn_alive (5 ms)
+[ RUN      ] FCFixture.test_evolution_symbol_numerical
+[       OK ] FCFixture.test_evolution_symbol_numerical (8 ms)
+[ RUN      ] FCFixture.test_evolution_symbol_plus
+[       OK ] FCFixture.test_evolution_symbol_plus (5 ms)
+[ RUN      ] FCFixture.test_evolution_return_alive
+[       OK ] FCFixture.test_evolution_return_alive (4 ms)
+[ RUN      ] FCFixture.test_evolution_return_value_dead
+[       OK ] FCFixture.test_evolution_return_value_dead (3 ms)
+[ RUN      ] FCFixture.test_neighbor_validation
+[       OK ] FCFixture.test_neighbor_validation (14 ms)
+[ RUN      ] FCFixture.test_cell_construction_live_cc
+[       OK ] FCFixture.test_cell_construction_live_cc (4 ms)
+[ RUN      ] FCFixture.test_cell_construction_dead_cc
+[       OK ] FCFixture.test_cell_construction_dead_cc (3 ms)
+[ RUN      ] FCFixture.test_cell_construction_alive_fc
+[       OK ] FCFixture.test_cell_construction_alive_fc (4 ms)
+[ RUN      ] FCFixture.test_cell_construction_dead_fc
+[       OK ] FCFixture.test_cell_construction_dead_fc (3 ms)
+[ RUN      ] FCFixture.test_cell_construction_bad
+[       OK ] FCFixture.test_cell_construction_bad (4 ms)
+[ RUN      ] FCFixture.test_cc_output
+[       OK ] FCFixture.test_cc_output (4 ms)
+[ RUN      ] FCFixture.test_fc_output
+[       OK ] FCFixture.test_fc_output (4 ms)
+[ RUN      ] FCFixture.test_fc_evolution_into_cc
+[       OK ] FCFixture.test_fc_evolution_into_cc (7 ms)
+[----------] 24 tests from FCFixture (119 ms total)
+
+[----------] 17 tests from LifeFixture
+[ RUN      ] LifeFixture.valid_life_construction_fc
+[       OK ] LifeFixture.valid_life_construction_fc (84 ms)
+[ RUN      ] LifeFixture.invalid_life_construction_fc_rows
+[       OK ] LifeFixture.invalid_life_construction_fc_rows (7 ms)
+[ RUN      ] LifeFixture.invalid_life_construction_fc_cols
+[       OK ] LifeFixture.invalid_life_construction_fc_cols (5 ms)
+[ RUN      ] LifeFixture.invalid_life_construction_fc_cc
+[       OK ] LifeFixture.invalid_life_construction_fc_cc (7 ms)
+[ RUN      ] LifeFixture.valid_life_construction_cc
+[       OK ] LifeFixture.valid_life_construction_cc (66 ms)
+[ RUN      ] LifeFixture.invalid_life_construction_cc_fc
+[       OK ] LifeFixture.invalid_life_construction_cc_fc (5 ms)
+[ RUN      ] LifeFixture.valid_life_construction_mixed_cells
+[       OK ] LifeFixture.valid_life_construction_mixed_cells (72 ms)
+[ RUN      ] LifeFixture.neighbor_count_mixed_cells_non_diag
+[       OK ] LifeFixture.neighbor_count_mixed_cells_non_diag (14 ms)
+[ RUN      ] LifeFixture.neighbor_count_mixed_cells_diag
+[       OK ] LifeFixture.neighbor_count_mixed_cells_diag (7 ms)
+[ RUN      ] LifeFixture.neighbor_count_mixed_cells_edge_non_diag
+[       OK ] LifeFixture.neighbor_count_mixed_cells_edge_non_diag (9 ms)
+[ RUN      ] LifeFixture.neighbor_count_mixed_cells_edge_diag
+[       OK ] LifeFixture.neighbor_count_mixed_cells_edge_diag (8 ms)
+[ RUN      ] LifeFixture.alive_count_mixed_cells
+[       OK ] LifeFixture.alive_count_mixed_cells (14 ms)
+[ RUN      ] LifeFixture.mixed_cells_initial_output
+[       OK ] LifeFixture.mixed_cells_initial_output (18 ms)
+[ RUN      ] LifeFixture.live_mixed_cells
+[       OK ] LifeFixture.live_mixed_cells (95 ms)
+[ RUN      ] LifeFixture.fredkin_cells_living
+[       OK ] LifeFixture.fredkin_cells_living (81 ms)
+[ RUN      ] LifeFixture.fredkin_cells_living_twice
+[       OK ] LifeFixture.fredkin_cells_living_twice (8 ms)
+[ RUN      ] LifeFixture.fredkin_cells_living_thrice
+[       OK ] LifeFixture.fredkin_cells_living_thrice (9 ms)
+[----------] 17 tests from LifeFixture (514 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test case ran. (67 ms total)
-[  PASSED  ] 1 test.
-==41100==
-==41100== HEAP SUMMARY:
-==41100==     in use at exit: 26,417 bytes in 196 blocks
-==41100==   total heap usage: 364 allocs, 168 frees, 182,465 bytes allocated
-==41100==
-==41100== LEAK SUMMARY:
-==41100==    definitely lost: 0 bytes in 0 blocks
-==41100==    indirectly lost: 0 bytes in 0 blocks
-==41100==      possibly lost: 2,064 bytes in 1 blocks
-==41100==    still reachable: 0 bytes in 0 blocks
-==41100==         suppressed: 24,353 bytes in 195 blocks
-==41100== Rerun with --leak-check=full to see details of leaked memory
-==41100==
-==41100== For counts of detected and suppressed errors, rerun with: -v
-==41100== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[==========] 53 tests from 3 test cases ran. (877 ms total)
+[  PASSED  ] 53 tests.
+==4664== 
+==4664== HEAP SUMMARY:
+==4664==     in use at exit: 0 bytes in 0 blocks
+==4664==   total heap usage: 1,746 allocs, 1,746 frees, 273,068 bytes allocated
+==4664== 
+==4664== All heap blocks were freed -- no leaks are possible
+==4664== 
+==4664== For counts of detected and suppressed errors, rerun with: -v
+==4664== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:98.39% of 124
+Branches executed:95.17% of 290
+Taken at least once:69.31% of 290
+Calls executed:80.42% of 332
+Creating 'Life.h.gcov'
 File 'TestLife.c++'
-Lines executed:100.00% of 2
-Branches executed:52.94% of 17
-Taken at least once:23.53% of 17
-No calls
-TestLife.c++:creating 'TestLife.c++.gcov'
+Lines executed:100.00% of 259
+Branches executed:72.70% of 1348
+Taken at least once:38.35% of 1348
+Calls executed:61.09% of 1565
+Creating 'TestLife.c++.gcov'
