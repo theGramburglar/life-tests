@@ -1,0 +1,202 @@
+==6327== Memcheck, a memory error detector
+==6327== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==6327== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==6327== Command: ./TestLife
+==6327== 
+Running main() from gtest_main.cc
+[==========] Running 79 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 21 tests from ConwayFixture
+[ RUN      ] ConwayFixture.test_write_1
+[       OK ] ConwayFixture.test_write_1 (12 ms)
+[ RUN      ] ConwayFixture.test_write_2
+[       OK ] ConwayFixture.test_write_2 (2 ms)
+[ RUN      ] ConwayFixture.test_write_3
+[       OK ] ConwayFixture.test_write_3 (5 ms)
+[ RUN      ] ConwayFixture.test_print_1
+[       OK ] ConwayFixture.test_print_1 (2 ms)
+[ RUN      ] ConwayFixture.test_print_2
+[       OK ] ConwayFixture.test_print_2 (2 ms)
+[ RUN      ] ConwayFixture.test_print_3
+[       OK ] ConwayFixture.test_print_3 (4 ms)
+[ RUN      ] ConwayFixture.test_print_4
+[       OK ] ConwayFixture.test_print_4 (4 ms)
+[ RUN      ] ConwayFixture.test_alive_1
+[       OK ] ConwayFixture.test_alive_1 (2 ms)
+[ RUN      ] ConwayFixture.test_alive_2
+[       OK ] ConwayFixture.test_alive_2 (2 ms)
+[ RUN      ] ConwayFixture.test_update_1
+[       OK ] ConwayFixture.test_update_1 (3 ms)
+[ RUN      ] ConwayFixture.test_update_2
+[       OK ] ConwayFixture.test_update_2 (4 ms)
+[ RUN      ] ConwayFixture.test_update_3
+[       OK ] ConwayFixture.test_update_3 (3 ms)
+[ RUN      ] ConwayFixture.test_count_neighbors_1
+[       OK ] ConwayFixture.test_count_neighbors_1 (19 ms)
+[ RUN      ] ConwayFixture.test_count_neighbors_2
+[       OK ] ConwayFixture.test_count_neighbors_2 (2 ms)
+[ RUN      ] ConwayFixture.test_count_neighbors_3
+[       OK ] ConwayFixture.test_count_neighbors_3 (3 ms)
+[ RUN      ] ConwayFixture.test_count_neighbors_4
+[       OK ] ConwayFixture.test_count_neighbors_4 (4 ms)
+[ RUN      ] ConwayFixture.test_count_conway_neighbors_1
+[       OK ] ConwayFixture.test_count_conway_neighbors_1 (20 ms)
+[ RUN      ] ConwayFixture.test_count_conway_neighbors_2
+[       OK ] ConwayFixture.test_count_conway_neighbors_2 (3 ms)
+[ RUN      ] ConwayFixture.test_count_conway_neighbors_3
+[       OK ] ConwayFixture.test_count_conway_neighbors_3 (3 ms)
+[ RUN      ] ConwayFixture.test_clone_1
+[       OK ] ConwayFixture.test_clone_1 (3 ms)
+[ RUN      ] ConwayFixture.test_clone_2
+[       OK ] ConwayFixture.test_clone_2 (3 ms)
+[----------] 21 tests from ConwayFixture (117 ms total)
+
+[----------] 23 tests from FredkinFixture
+[ RUN      ] FredkinFixture.test_print1
+[       OK ] FredkinFixture.test_print1 (3 ms)
+[ RUN      ] FredkinFixture.test_print2
+[       OK ] FredkinFixture.test_print2 (2 ms)
+[ RUN      ] FredkinFixture.test_print3
+[       OK ] FredkinFixture.test_print3 (2 ms)
+[ RUN      ] FredkinFixture.test_write1
+[       OK ] FredkinFixture.test_write1 (3 ms)
+[ RUN      ] FredkinFixture.test_write2
+[       OK ] FredkinFixture.test_write2 (2 ms)
+[ RUN      ] FredkinFixture.test_write3
+[       OK ] FredkinFixture.test_write3 (3 ms)
+[ RUN      ] FredkinFixture.test_dead1
+[       OK ] FredkinFixture.test_dead1 (3 ms)
+[ RUN      ] FredkinFixture.test_dead2
+[       OK ] FredkinFixture.test_dead2 (2 ms)
+[ RUN      ] FredkinFixture.test_dead3
+[       OK ] FredkinFixture.test_dead3 (2 ms)
+[ RUN      ] FredkinFixture.test_update1
+[       OK ] FredkinFixture.test_update1 (3 ms)
+[ RUN      ] FredkinFixture.test_update2
+[       OK ] FredkinFixture.test_update2 (3 ms)
+[ RUN      ] FredkinFixture.test_update3
+[       OK ] FredkinFixture.test_update3 (3 ms)
+[ RUN      ] FredkinFixture.test_update4
+[       OK ] FredkinFixture.test_update4 (5 ms)
+[ RUN      ] FredkinFixture.test_update5
+[       OK ] FredkinFixture.test_update5 (2 ms)
+[ RUN      ] FredkinFixture.test_count_ac_neighbors1
+[       OK ] FredkinFixture.test_count_ac_neighbors1 (6 ms)
+[ RUN      ] FredkinFixture.test_count_ac_neighbors2
+[       OK ] FredkinFixture.test_count_ac_neighbors2 (4 ms)
+[ RUN      ] FredkinFixture.test_count_ac_neighbors3
+[       OK ] FredkinFixture.test_count_ac_neighbors3 (4 ms)
+[ RUN      ] FredkinFixture.test_count_fc_neighbors1
+[       OK ] FredkinFixture.test_count_fc_neighbors1 (15 ms)
+[ RUN      ] FredkinFixture.test_count_fc_neighbors2
+[       OK ] FredkinFixture.test_count_fc_neighbors2 (8 ms)
+[ RUN      ] FredkinFixture.test_count_fc_neighbors3
+[       OK ] FredkinFixture.test_count_fc_neighbors3 (4 ms)
+[ RUN      ] FredkinFixture.test_clone1
+[       OK ] FredkinFixture.test_clone1 (4 ms)
+[ RUN      ] FredkinFixture.test_clone2
+[       OK ] FredkinFixture.test_clone2 (2 ms)
+[ RUN      ] FredkinFixture.test_clone3
+[       OK ] FredkinFixture.test_clone3 (3 ms)
+[----------] 23 tests from FredkinFixture (88 ms total)
+
+[----------] 18 tests from CellFixture
+[ RUN      ] CellFixture.test_print_1
+[       OK ] CellFixture.test_print_1 (3 ms)
+[ RUN      ] CellFixture.test_print_2
+[       OK ] CellFixture.test_print_2 (3 ms)
+[ RUN      ] CellFixture.test_print_3
+[       OK ] CellFixture.test_print_3 (3 ms)
+[ RUN      ] CellFixture.test_copy_construct_1
+[       OK ] CellFixture.test_copy_construct_1 (3 ms)
+[ RUN      ] CellFixture.test_copy_construct_2
+[       OK ] CellFixture.test_copy_construct_2 (4 ms)
+[ RUN      ] CellFixture.test_copy_construct_3
+[       OK ] CellFixture.test_copy_construct_3 (3 ms)
+[ RUN      ] CellFixture.test_assign_1
+[       OK ] CellFixture.test_assign_1 (4 ms)
+[ RUN      ] CellFixture.test_assign_2
+[       OK ] CellFixture.test_assign_2 (3 ms)
+[ RUN      ] CellFixture.test_assign_3
+[       OK ] CellFixture.test_assign_3 (3 ms)
+[ RUN      ] CellFixture.test_is_dead_1
+[       OK ] CellFixture.test_is_dead_1 (3 ms)
+[ RUN      ] CellFixture.test_is_dead_2
+[       OK ] CellFixture.test_is_dead_2 (2 ms)
+[ RUN      ] CellFixture.test_is_dead_3
+[       OK ] CellFixture.test_is_dead_3 (3 ms)
+[ RUN      ] CellFixture.test_update_1
+[       OK ] CellFixture.test_update_1 (3 ms)
+[ RUN      ] CellFixture.test_update_2
+[       OK ] CellFixture.test_update_2 (5 ms)
+[ RUN      ] CellFixture.test_update_3
+[       OK ] CellFixture.test_update_3 (4 ms)
+[ RUN      ] CellFixture.test_count_neigh_1
+[       OK ] CellFixture.test_count_neigh_1 (33 ms)
+[ RUN      ] CellFixture.test_count_neigh_2
+[       OK ] CellFixture.test_count_neigh_2 (5 ms)
+[ RUN      ] CellFixture.test_count_neigh_3
+[       OK ] CellFixture.test_count_neigh_3 (5 ms)
+[----------] 18 tests from CellFixture (94 ms total)
+
+[----------] 17 tests from LifeFixture
+[ RUN      ] LifeFixture.test_print_1
+[       OK ] LifeFixture.test_print_1 (36 ms)
+[ RUN      ] LifeFixture.test_print_2
+[       OK ] LifeFixture.test_print_2 (35 ms)
+[ RUN      ] LifeFixture.test_print_3
+[       OK ] LifeFixture.test_print_3 (39 ms)
+[ RUN      ] LifeFixture.test_print_4
+[       OK ] LifeFixture.test_print_4 (47 ms)
+[ RUN      ] LifeFixture.test_get_neighbors_1
+[       OK ] LifeFixture.test_get_neighbors_1 (7 ms)
+[ RUN      ] LifeFixture.test_get_neighbors_2
+[       OK ] LifeFixture.test_get_neighbors_2 (15 ms)
+[ RUN      ] LifeFixture.test_get_neighbors_3
+[       OK ] LifeFixture.test_get_neighbors_3 (20 ms)
+[ RUN      ] LifeFixture.test_copy_construct_1
+[       OK ] LifeFixture.test_copy_construct_1 (12 ms)
+[ RUN      ] LifeFixture.test_copy_construct_2
+[       OK ] LifeFixture.test_copy_construct_2 (10 ms)
+[ RUN      ] LifeFixture.test_copy_construct_3
+[       OK ] LifeFixture.test_copy_construct_3 (24 ms)
+[ RUN      ] LifeFixture.test_assign_1
+[       OK ] LifeFixture.test_assign_1 (4 ms)
+[ RUN      ] LifeFixture.test_assign_2
+[       OK ] LifeFixture.test_assign_2 (5 ms)
+[ RUN      ] LifeFixture.test_assign_3
+[       OK ] LifeFixture.test_assign_3 (10 ms)
+[ RUN      ] LifeFixture.test_do_generation_1
+[       OK ] LifeFixture.test_do_generation_1 (5 ms)
+[ RUN      ] LifeFixture.test_do_generation_2
+[       OK ] LifeFixture.test_do_generation_2 (4 ms)
+[ RUN      ] LifeFixture.test_do_generation_3
+[       OK ] LifeFixture.test_do_generation_3 (5 ms)
+[ RUN      ] LifeFixture.test_do_generation_4
+[       OK ] LifeFixture.test_do_generation_4 (5 ms)
+[----------] 17 tests from LifeFixture (285 ms total)
+
+[----------] Global test environment tear-down
+[==========] 79 tests from 4 test cases ran. (615 ms total)
+[  PASSED  ] 79 tests.
+==6327== 
+==6327== HEAP SUMMARY:
+==6327==     in use at exit: 0 bytes in 0 blocks
+==6327==   total heap usage: 1,922 allocs, 1,922 frees, 217,063 bytes allocated
+==6327== 
+==6327== All heap blocks were freed -- no leaks are possible
+==6327== 
+==6327== For counts of detected and suppressed errors, rerun with: -v
+==6327== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:98.82% of 170
+Branches executed:97.12% of 278
+Taken at least once:77.70% of 278
+Calls executed:86.39% of 338
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 538
+Branches executed:71.08% of 2600
+Taken at least once:35.81% of 2600
+Calls executed:58.57% of 2959
+Creating 'TestLife.c++.gcov'
