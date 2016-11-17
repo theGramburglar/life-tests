@@ -1,0 +1,141 @@
+==11365== Memcheck, a memory error detector
+==11365== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==11365== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==11365== Command: ./TestLife
+==11365== 
+Running main() from gtest_main.cc
+[==========] Running 32 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 5 tests from AbstractCellFixture
+[ RUN      ] AbstractCellFixture.countNeighbors1
+[       OK ] AbstractCellFixture.countNeighbors1 (9 ms)
+[ RUN      ] AbstractCellFixture.countNeighbors2
+[       OK ] AbstractCellFixture.countNeighbors2 (4 ms)
+[ RUN      ] AbstractCellFixture.countNeighbors3
+[       OK ] AbstractCellFixture.countNeighbors3 (3 ms)
+[ RUN      ] AbstractCellFixture.countNeighbors4
+[       OK ] AbstractCellFixture.countNeighbors4 (4 ms)
+[ RUN      ] AbstractCellFixture.countNeighbors5
+[       OK ] AbstractCellFixture.countNeighbors5 (3 ms)
+[----------] 5 tests from AbstractCellFixture (28 ms total)
+
+[----------] 7 tests from ConwayCellFixture
+[ RUN      ] ConwayCellFixture.neighbors1
+[       OK ] ConwayCellFixture.neighbors1 (3 ms)
+[ RUN      ] ConwayCellFixture.neighbors2
+[       OK ] ConwayCellFixture.neighbors2 (2 ms)
+[ RUN      ] ConwayCellFixture.neighbors3
+[       OK ] ConwayCellFixture.neighbors3 (3 ms)
+[ RUN      ] ConwayCellFixture.advance1
+[       OK ] ConwayCellFixture.advance1 (3 ms)
+[ RUN      ] ConwayCellFixture.advance2
+[       OK ] ConwayCellFixture.advance2 (2 ms)
+[ RUN      ] ConwayCellFixture.advance3
+[       OK ] ConwayCellFixture.advance3 (2 ms)
+[ RUN      ] ConwayCellFixture.advance4
+[       OK ] ConwayCellFixture.advance4 (2 ms)
+[----------] 7 tests from ConwayCellFixture (19 ms total)
+
+[----------] 7 tests from FredkinCellFixture
+[ RUN      ] FredkinCellFixture.neighbors1
+[       OK ] FredkinCellFixture.neighbors1 (4 ms)
+[ RUN      ] FredkinCellFixture.neighbors2
+[       OK ] FredkinCellFixture.neighbors2 (2 ms)
+[ RUN      ] FredkinCellFixture.neighbors3
+[       OK ] FredkinCellFixture.neighbors3 (3 ms)
+[ RUN      ] FredkinCellFixture.advance1
+[       OK ] FredkinCellFixture.advance1 (2 ms)
+[ RUN      ] FredkinCellFixture.advance2
+[       OK ] FredkinCellFixture.advance2 (3 ms)
+[ RUN      ] FredkinCellFixture.advance3
+[       OK ] FredkinCellFixture.advance3 (3 ms)
+[ RUN      ] FredkinCellFixture.advance4
+[       OK ] FredkinCellFixture.advance4 (3 ms)
+[----------] 7 tests from FredkinCellFixture (21 ms total)
+
+[----------] 7 tests from CellFixture
+[ RUN      ] CellFixture.constructor
+[       OK ] CellFixture.constructor (3 ms)
+[ RUN      ] CellFixture.neighbors1
+[       OK ] CellFixture.neighbors1 (8 ms)
+[ RUN      ] CellFixture.neighbors2
+[       OK ] CellFixture.neighbors2 (7 ms)
+[ RUN      ] CellFixture.neighbors3
+[       OK ] CellFixture.neighbors3 (4 ms)
+[ RUN      ] CellFixture.advance1
+[       OK ] CellFixture.advance1 (4 ms)
+[ RUN      ] CellFixture.advance2
+[       OK ] CellFixture.advance2 (4 ms)
+[ RUN      ] CellFixture.advance3
+[       OK ] CellFixture.advance3 (5 ms)
+[----------] 7 tests from CellFixture (36 ms total)
+
+[----------] 6 tests from LifeFixture
+[ RUN      ] LifeFixture.print1
+Generation = 0, Population = 1.
+...
+.*.
+...
+
+[       OK ] LifeFixture.print1 (53 ms)
+[ RUN      ] LifeFixture.print2
+Generation = 0, Population = 1.
+---
+-0-
+---
+
+[       OK ] LifeFixture.print2 (34 ms)
+[ RUN      ] LifeFixture.print3
+Generation = 0, Population = 1.
+---
+-*-
+---
+
+[       OK ] LifeFixture.print3 (40 ms)
+[ RUN      ] LifeFixture.simulate1
+Generation = 1, Population = 0.
+...
+...
+...
+
+[       OK ] LifeFixture.simulate1 (15 ms)
+[ RUN      ] LifeFixture.simulate2
+Generation = 1, Population = 4.
+-0-
+0-0
+-0-
+
+[       OK ] LifeFixture.simulate2 (9 ms)
+[ RUN      ] LifeFixture.simulate3
+Generation = 1, Population = 4.
+-0-
+0.0
+-0-
+
+[       OK ] LifeFixture.simulate3 (9 ms)
+[----------] 6 tests from LifeFixture (160 ms total)
+
+[----------] Global test environment tear-down
+[==========] 32 tests from 5 test cases ran. (294 ms total)
+[  PASSED  ] 32 tests.
+==11365== 
+==11365== HEAP SUMMARY:
+==11365==     in use at exit: 0 bytes in 0 blocks
+==11365==   total heap usage: 938 allocs, 938 frees, 113,556 bytes allocated
+==11365== 
+==11365== All heap blocks were freed -- no leaks are possible
+==11365== 
+==11365== For counts of detected and suppressed errors, rerun with: -v
+==11365== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:87.78% of 180
+Branches executed:98.67% of 301
+Taken at least once:74.75% of 301
+Calls executed:88.32% of 197
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 171
+Branches executed:62.24% of 874
+Taken at least once:32.95% of 874
+Calls executed:59.46% of 1142
+Creating 'TestLife.c++.gcov'
