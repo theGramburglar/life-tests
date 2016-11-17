@@ -1,0 +1,111 @@
+==3387== Memcheck, a memory error detector
+==3387== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3387== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==3387== Command: ./TestLife
+==3387== 
+Running main() from gtest_main.cc
+[==========] Running 32 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 12 tests from LifeFixture
+[ RUN      ] LifeFixture.constructor_1
+[       OK ] LifeFixture.constructor_1 (29 ms)
+[ RUN      ] LifeFixture.constructor_2
+[       OK ] LifeFixture.constructor_2 (8 ms)
+[ RUN      ] LifeFixture.constructor_3
+[       OK ] LifeFixture.constructor_3 (10 ms)
+[ RUN      ] LifeFixture.read_in_1
+[       OK ] LifeFixture.read_in_1 (119 ms)
+[ RUN      ] LifeFixture.read_in_2
+[       OK ] LifeFixture.read_in_2 (6 ms)
+[ RUN      ] LifeFixture.read_in_3
+[       OK ] LifeFixture.read_in_3 (5 ms)
+[ RUN      ] LifeFixture.turn_1
+[       OK ] LifeFixture.turn_1 (59 ms)
+[ RUN      ] LifeFixture.turn_2
+[       OK ] LifeFixture.turn_2 (74 ms)
+[ RUN      ] LifeFixture.turn_3
+[       OK ] LifeFixture.turn_3 (75 ms)
+[ RUN      ] LifeFixture.print_1
+[       OK ] LifeFixture.print_1 (20 ms)
+[ RUN      ] LifeFixture.print_2
+[       OK ] LifeFixture.print_2 (11 ms)
+[ RUN      ] LifeFixture.print_3
+[       OK ] LifeFixture.print_3 (10 ms)
+[----------] 12 tests from LifeFixture (465 ms total)
+
+[----------] 9 tests from ConwayCellFixture
+[ RUN      ] ConwayCellFixture.constructor_1
+[       OK ] ConwayCellFixture.constructor_1 (4 ms)
+[ RUN      ] ConwayCellFixture.constructor_2
+[       OK ] ConwayCellFixture.constructor_2 (3 ms)
+[ RUN      ] ConwayCellFixture.read_1
+[       OK ] ConwayCellFixture.read_1 (6 ms)
+[ RUN      ] ConwayCellFixture.read_2
+[       OK ] ConwayCellFixture.read_2 (5 ms)
+[ RUN      ] ConwayCellFixture.write_1
+[       OK ] ConwayCellFixture.write_1 (4 ms)
+[ RUN      ] ConwayCellFixture.write_2
+[       OK ] ConwayCellFixture.write_2 (3 ms)
+[ RUN      ] ConwayCellFixture.clone
+[       OK ] ConwayCellFixture.clone (5 ms)
+[ RUN      ] ConwayCellFixture.evolve_1
+[       OK ] ConwayCellFixture.evolve_1 (4 ms)
+[ RUN      ] ConwayCellFixture.evolve_2
+[       OK ] ConwayCellFixture.evolve_2 (4 ms)
+[----------] 9 tests from ConwayCellFixture (48 ms total)
+
+[----------] 11 tests from FredkinCellFixture
+[ RUN      ] FredkinCellFixture.constructor_1
+[       OK ] FredkinCellFixture.constructor_1 (4 ms)
+[ RUN      ] FredkinCellFixture.constructor_2
+[       OK ] FredkinCellFixture.constructor_2 (3 ms)
+[ RUN      ] FredkinCellFixture.read_1
+[       OK ] FredkinCellFixture.read_1 (4 ms)
+[ RUN      ] FredkinCellFixture.read_2
+[       OK ] FredkinCellFixture.read_2 (4 ms)
+[ RUN      ] FredkinCellFixture.read_3
+[       OK ] FredkinCellFixture.read_3 (3 ms)
+[ RUN      ] FredkinCellFixture.write_1
+[       OK ] FredkinCellFixture.write_1 (3 ms)
+[ RUN      ] FredkinCellFixture.write_2
+[       OK ] FredkinCellFixture.write_2 (4 ms)
+[ RUN      ] FredkinCellFixture.write_3
+[       OK ] FredkinCellFixture.write_3 (4 ms)
+[ RUN      ] FredkinCellFixture.clone
+[       OK ] FredkinCellFixture.clone (5 ms)
+[ RUN      ] FredkinCellFixture.evolve_1
+[       OK ] FredkinCellFixture.evolve_1 (3 ms)
+[ RUN      ] FredkinCellFixture.evolve_2
+[       OK ] FredkinCellFixture.evolve_2 (3 ms)
+[----------] 11 tests from FredkinCellFixture (56 ms total)
+
+[----------] Global test environment tear-down
+[==========] 32 tests from 3 test cases ran. (645 ms total)
+[  PASSED  ] 32 tests.
+==3387== 
+==3387== HEAP SUMMARY:
+==3387==     in use at exit: 72,736 bytes in 3 blocks
+==3387==   total heap usage: 775 allocs, 772 frees, 180,426 bytes allocated
+==3387== 
+==3387== LEAK SUMMARY:
+==3387==    definitely lost: 32 bytes in 2 blocks
+==3387==    indirectly lost: 0 bytes in 0 blocks
+==3387==      possibly lost: 0 bytes in 0 blocks
+==3387==    still reachable: 72,704 bytes in 1 blocks
+==3387==         suppressed: 0 bytes in 0 blocks
+==3387== Rerun with --leak-check=full to see details of leaked memory
+==3387== 
+==3387== For counts of detected and suppressed errors, rerun with: -v
+==3387== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:95.14% of 144
+Branches executed:98.72% of 470
+Taken at least once:76.38% of 470
+Calls executed:93.75% of 368
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 169
+Branches executed:63.17% of 934
+Taken at least once:31.58% of 934
+Calls executed:52.61% of 1186
+Creating 'TestLife.c++.gcov'
