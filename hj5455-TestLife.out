@@ -1,0 +1,235 @@
+==26776== Memcheck, a memory error detector
+==26776== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==26776== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==26776== Command: ./TestLife
+==26776== 
+Running main() from gtest_main.cc
+[==========] Running 100 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 100 tests from LifeFixture
+[ RUN      ] LifeFixture.test_conway_constructor
+[       OK ] LifeFixture.test_conway_constructor (8 ms)
+[ RUN      ] LifeFixture.test_conway_constructor1
+[       OK ] LifeFixture.test_conway_constructor1 (2 ms)
+[ RUN      ] LifeFixture.test_conway_constructor2
+[       OK ] LifeFixture.test_conway_constructor2 (3 ms)
+[ RUN      ] LifeFixture.test_conway_constructor3
+[       OK ] LifeFixture.test_conway_constructor3 (2 ms)
+[ RUN      ] LifeFixture.test_conway_constructor4
+[       OK ] LifeFixture.test_conway_constructor4 (2 ms)
+[ RUN      ] LifeFixture.test_conway_constructor5
+[       OK ] LifeFixture.test_conway_constructor5 (3 ms)
+[ RUN      ] LifeFixture.test_conway_constructor6
+[       OK ] LifeFixture.test_conway_constructor6 (2 ms)
+[ RUN      ] LifeFixture.test_conway_copy
+[       OK ] LifeFixture.test_conway_copy (3 ms)
+[ RUN      ] LifeFixture.test_conway_copy1
+[       OK ] LifeFixture.test_conway_copy1 (2 ms)
+[ RUN      ] LifeFixture.test_conway_copy2
+[       OK ] LifeFixture.test_conway_copy2 (2 ms)
+[ RUN      ] LifeFixture.test_conway_copy3
+[       OK ] LifeFixture.test_conway_copy3 (3 ms)
+[ RUN      ] LifeFixture.test_conway_evolution
+[       OK ] LifeFixture.test_conway_evolution (3 ms)
+[ RUN      ] LifeFixture.test_conway_evolution1
+[       OK ] LifeFixture.test_conway_evolution1 (2 ms)
+[ RUN      ] LifeFixture.test_conway_evolution3
+[       OK ] LifeFixture.test_conway_evolution3 (2 ms)
+[ RUN      ] LifeFixture.test_conway_evolution2
+[       OK ] LifeFixture.test_conway_evolution2 (2 ms)
+[ RUN      ] LifeFixture.test_conway_findstate
+[       OK ] LifeFixture.test_conway_findstate (2 ms)
+[ RUN      ] LifeFixture.test_conway_findstate1
+[       OK ] LifeFixture.test_conway_findstate1 (2 ms)
+[ RUN      ] LifeFixture.test_conway_findstate2
+[       OK ] LifeFixture.test_conway_findstate2 (2 ms)
+[ RUN      ] LifeFixture.test_conway_clone
+[       OK ] LifeFixture.test_conway_clone (3 ms)
+[ RUN      ] LifeFixture.test_conway_clone1
+[       OK ] LifeFixture.test_conway_clone1 (3 ms)
+[ RUN      ] LifeFixture.test_conway_clone2
+[       OK ] LifeFixture.test_conway_clone2 (3 ms)
+[ RUN      ] LifeFixture.test_fredkin_constructor
+[       OK ] LifeFixture.test_fredkin_constructor (3 ms)
+[ RUN      ] LifeFixture.test_fredkin_constructor1
+[       OK ] LifeFixture.test_fredkin_constructor1 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_constructor2
+[       OK ] LifeFixture.test_fredkin_constructor2 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_constructor3
+[       OK ] LifeFixture.test_fredkin_constructor3 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_constructor4
+[       OK ] LifeFixture.test_fredkin_constructor4 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_constructor5
+[       OK ] LifeFixture.test_fredkin_constructor5 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_constructor6
+[       OK ] LifeFixture.test_fredkin_constructor6 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_constructor7
+[       OK ] LifeFixture.test_fredkin_constructor7 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_constructor8
+[       OK ] LifeFixture.test_fredkin_constructor8 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_constructor9
+[       OK ] LifeFixture.test_fredkin_constructor9 (3 ms)
+[ RUN      ] LifeFixture.test_fredkin_copy
+[       OK ] LifeFixture.test_fredkin_copy (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_copy1
+[       OK ] LifeFixture.test_fredkin_copy1 (3 ms)
+[ RUN      ] LifeFixture.test_fredkin_copy2
+[       OK ] LifeFixture.test_fredkin_copy2 (3 ms)
+[ RUN      ] LifeFixture.test_fredkin_copy3
+[       OK ] LifeFixture.test_fredkin_copy3 (3 ms)
+[ RUN      ] LifeFixture.test_fredkin_evolution
+[       OK ] LifeFixture.test_fredkin_evolution (3 ms)
+[ RUN      ] LifeFixture.test_fredkin_evolution1
+[       OK ] LifeFixture.test_fredkin_evolution1 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_evolution2
+[       OK ] LifeFixture.test_fredkin_evolution2 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_age
+[       OK ] LifeFixture.test_fredkin_age (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_age1
+[       OK ] LifeFixture.test_fredkin_age1 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_age2
+[       OK ] LifeFixture.test_fredkin_age2 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_findstate
+[       OK ] LifeFixture.test_fredkin_findstate (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_findstate1
+[       OK ] LifeFixture.test_fredkin_findstate1 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_findstate2
+[       OK ] LifeFixture.test_fredkin_findstate2 (2 ms)
+[ RUN      ] LifeFixture.test_fredkin_clone
+[       OK ] LifeFixture.test_fredkin_clone (3 ms)
+[ RUN      ] LifeFixture.test_fredkin_clone1
+[       OK ] LifeFixture.test_fredkin_clone1 (3 ms)
+[ RUN      ] LifeFixture.test_fredkin_clone2
+[       OK ] LifeFixture.test_fredkin_clone2 (2 ms)
+[ RUN      ] LifeFixture.test_cell_constructor
+[       OK ] LifeFixture.test_cell_constructor (3 ms)
+[ RUN      ] LifeFixture.test_cell_constructor1
+[       OK ] LifeFixture.test_cell_constructor1 (3 ms)
+[ RUN      ] LifeFixture.test_cell_constructor2
+[       OK ] LifeFixture.test_cell_constructor2 (2 ms)
+[ RUN      ] LifeFixture.test_cell_constructor3
+[       OK ] LifeFixture.test_cell_constructor3 (3 ms)
+[ RUN      ] LifeFixture.test_cell_constructor4
+[       OK ] LifeFixture.test_cell_constructor4 (3 ms)
+[ RUN      ] LifeFixture.test_cell_constructor5
+[       OK ] LifeFixture.test_cell_constructor5 (3 ms)
+[ RUN      ] LifeFixture.test_cell_constructor6
+[       OK ] LifeFixture.test_cell_constructor6 (2 ms)
+[ RUN      ] LifeFixture.test_cell_constructor7
+[       OK ] LifeFixture.test_cell_constructor7 (2 ms)
+[ RUN      ] LifeFixture.test_cell_constructor8
+[       OK ] LifeFixture.test_cell_constructor8 (3 ms)
+[ RUN      ] LifeFixture.test_cell_constructor9
+[       OK ] LifeFixture.test_cell_constructor9 (2 ms)
+[ RUN      ] LifeFixture.test_cell_constructor10
+[       OK ] LifeFixture.test_cell_constructor10 (2 ms)
+[ RUN      ] LifeFixture.test_cell_constructor11
+[       OK ] LifeFixture.test_cell_constructor11 (2 ms)
+[ RUN      ] LifeFixture.test_cell_copy_constructor
+[       OK ] LifeFixture.test_cell_copy_constructor (2 ms)
+[ RUN      ] LifeFixture.test_cell_copy_constructor1
+[       OK ] LifeFixture.test_cell_copy_constructor1 (2 ms)
+[ RUN      ] LifeFixture.test_cell_copy_constructor2
+[       OK ] LifeFixture.test_cell_copy_constructor2 (3 ms)
+[ RUN      ] LifeFixture.test_cell_copy_assignment
+[       OK ] LifeFixture.test_cell_copy_assignment (3 ms)
+[ RUN      ] LifeFixture.test_cell_copy_assignment1
+[       OK ] LifeFixture.test_cell_copy_assignment1 (3 ms)
+[ RUN      ] LifeFixture.test_cell_copy_assignment2
+[       OK ] LifeFixture.test_cell_copy_assignment2 (3 ms)
+[ RUN      ] LifeFixture.test_cell_evolution
+[       OK ] LifeFixture.test_cell_evolution (3 ms)
+[ RUN      ] LifeFixture.test_cell_evolution2
+[       OK ] LifeFixture.test_cell_evolution2 (2 ms)
+[ RUN      ] LifeFixture.test_cell_evolution3
+[       OK ] LifeFixture.test_cell_evolution3 (3 ms)
+[ RUN      ] LifeFixture.test_cell_isalive
+[       OK ] LifeFixture.test_cell_isalive (2 ms)
+[ RUN      ] LifeFixture.test_cell_isalive1
+[       OK ] LifeFixture.test_cell_isalive1 (2 ms)
+[ RUN      ] LifeFixture.test_cell_isalive2
+[       OK ] LifeFixture.test_cell_isalive2 (2 ms)
+[ RUN      ] LifeFixture.test_cell_findstate
+[       OK ] LifeFixture.test_cell_findstate (2 ms)
+[ RUN      ] LifeFixture.test_cell_findstate1
+[       OK ] LifeFixture.test_cell_findstate1 (2 ms)
+[ RUN      ] LifeFixture.test_cell_findstate2
+[       OK ] LifeFixture.test_cell_findstate2 (2 ms)
+[ RUN      ] LifeFixture.test_cell_changestate
+[       OK ] LifeFixture.test_cell_changestate (2 ms)
+[ RUN      ] LifeFixture.test_cell_changestate1
+[       OK ] LifeFixture.test_cell_changestate1 (3 ms)
+[ RUN      ] LifeFixture.test_cell_changestate2
+[       OK ] LifeFixture.test_cell_changestate2 (2 ms)
+[ RUN      ] LifeFixture.test_life_constructor
+[       OK ] LifeFixture.test_life_constructor (40 ms)
+[ RUN      ] LifeFixture.test_life_constructor1
+[       OK ] LifeFixture.test_life_constructor1 (2 ms)
+[ RUN      ] LifeFixture.test_life_constructor2
+[       OK ] LifeFixture.test_life_constructor2 (4 ms)
+[ RUN      ] LifeFixture.test_life_constructor3
+[       OK ] LifeFixture.test_life_constructor3 (2 ms)
+[ RUN      ] LifeFixture.test_life_constructor4
+[       OK ] LifeFixture.test_life_constructor4 (3 ms)
+[ RUN      ] LifeFixture.test_life_constructor5
+[       OK ] LifeFixture.test_life_constructor5 (3 ms)
+[ RUN      ] LifeFixture.test_life_copyconstructor
+[       OK ] LifeFixture.test_life_copyconstructor (6 ms)
+[ RUN      ] LifeFixture.test_life_copyconstructor2
+[       OK ] LifeFixture.test_life_copyconstructor2 (3 ms)
+[ RUN      ] LifeFixture.test_life_copyconstructor3
+[       OK ] LifeFixture.test_life_copyconstructor3 (3 ms)
+[ RUN      ] LifeFixture.test_life_copyconstructor4
+[       OK ] LifeFixture.test_life_copyconstructor4 (3 ms)
+[ RUN      ] LifeFixture.test_life_copyconstructor5
+[       OK ] LifeFixture.test_life_copyconstructor5 (3 ms)
+[ RUN      ] LifeFixture.test_life_copyassignment
+[       OK ] LifeFixture.test_life_copyassignment (7 ms)
+[ RUN      ] LifeFixture.test_life_copyassignment1
+[       OK ] LifeFixture.test_life_copyassignment1 (3 ms)
+[ RUN      ] LifeFixture.test_life_copyassignment2
+[       OK ] LifeFixture.test_life_copyassignment2 (4 ms)
+[ RUN      ] LifeFixture.test_life_countneighbors
+[       OK ] LifeFixture.test_life_countneighbors (7 ms)
+[ RUN      ] LifeFixture.test_life_countneighbors1
+[       OK ] LifeFixture.test_life_countneighbors1 (3 ms)
+[ RUN      ] LifeFixture.test_life_countneighbors2
+[       OK ] LifeFixture.test_life_countneighbors2 (3 ms)
+[ RUN      ] LifeFixture.test_life_executeboard
+[       OK ] LifeFixture.test_life_executeboard (54 ms)
+[ RUN      ] LifeFixture.test_life_executeboard1
+[       OK ] LifeFixture.test_life_executeboard1 (54 ms)
+[ RUN      ] LifeFixture.test_life_executeboard2
+[       OK ] LifeFixture.test_life_executeboard2 (22 ms)
+[ RUN      ] LifeFixture.test_life_executeboard3
+[       OK ] LifeFixture.test_life_executeboard3 (2 ms)
+[ RUN      ] LifeFixture.test_life_executeboard4
+[       OK ] LifeFixture.test_life_executeboard4 (3 ms)
+[ RUN      ] LifeFixture.test_life_executeboard5
+[       OK ] LifeFixture.test_life_executeboard5 (4 ms)
+[----------] 100 tests from LifeFixture (448 ms total)
+
+[----------] Global test environment tear-down
+[==========] 100 tests from 1 test case ran. (475 ms total)
+[  PASSED  ] 100 tests.
+==26776== 
+==26776== HEAP SUMMARY:
+==26776==     in use at exit: 0 bytes in 0 blocks
+==26776==   total heap usage: 2,628 allocs, 2,628 frees, 221,683 bytes allocated
+==26776== 
+==26776== All heap blocks were freed -- no leaks are possible
+==26776== 
+==26776== For counts of detected and suppressed errors, rerun with: -v
+==26776== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:99.40% of 167
+Branches executed:82.23% of 394
+Taken at least once:64.21% of 394
+Calls executed:84.96% of 226
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 442
+Branches executed:64.32% of 2242
+Taken at least once:32.16% of 2242
+Calls executed:54.07% of 3081
+Creating 'TestLife.c++.gcov'
