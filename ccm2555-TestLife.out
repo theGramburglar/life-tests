@@ -1,0 +1,233 @@
+==17682== Memcheck, a memory error detector
+==17682== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==17682== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==17682== Command: ./TestLife
+==17682== 
+Running main() from gtest_main.cc
+[==========] Running 99 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 99 tests from TestLife
+[ RUN      ] TestLife.conwaycell_construction_1
+[       OK ] TestLife.conwaycell_construction_1 (17 ms)
+[ RUN      ] TestLife.conwaycell_construction_2
+[       OK ] TestLife.conwaycell_construction_2 (2 ms)
+[ RUN      ] TestLife.conwaycell_construction_3
+[       OK ] TestLife.conwaycell_construction_3 (3 ms)
+[ RUN      ] TestLife.conwaycell_construction_4
+[       OK ] TestLife.conwaycell_construction_4 (2 ms)
+[ RUN      ] TestLife.conway_evolve_1
+[       OK ] TestLife.conway_evolve_1 (3 ms)
+[ RUN      ] TestLife.conway_evolve_2
+[       OK ] TestLife.conway_evolve_2 (3 ms)
+[ RUN      ] TestLife.conway_evolve_3
+[       OK ] TestLife.conway_evolve_3 (2 ms)
+[ RUN      ] TestLife.conway_evolve_4
+[       OK ] TestLife.conway_evolve_4 (2 ms)
+[ RUN      ] TestLife.conway_evolve_5
+[       OK ] TestLife.conway_evolve_5 (2 ms)
+[ RUN      ] TestLife.conway_evolve_6
+[       OK ] TestLife.conway_evolve_6 (2 ms)
+[ RUN      ] TestLife.conway_evolve_7
+[       OK ] TestLife.conway_evolve_7 (2 ms)
+[ RUN      ] TestLife.conway_evolve_8
+[       OK ] TestLife.conway_evolve_8 (2 ms)
+[ RUN      ] TestLife.conway_evolve_9
+[       OK ] TestLife.conway_evolve_9 (3 ms)
+[ RUN      ] TestLife.conway_evolve_10
+[       OK ] TestLife.conway_evolve_10 (3 ms)
+[ RUN      ] TestLife.conway_evolve_11
+[       OK ] TestLife.conway_evolve_11 (2 ms)
+[ RUN      ] TestLife.conway_kill_1
+[       OK ] TestLife.conway_kill_1 (2 ms)
+[ RUN      ] TestLife.conway_kill_2
+[       OK ] TestLife.conway_kill_2 (2 ms)
+[ RUN      ] TestLife.conway_kill_3
+[       OK ] TestLife.conway_kill_3 (2 ms)
+[ RUN      ] TestLife.conway_revive_1
+[       OK ] TestLife.conway_revive_1 (3 ms)
+[ RUN      ] TestLife.conway_revive_2
+[       OK ] TestLife.conway_revive_2 (2 ms)
+[ RUN      ] TestLife.conway_revive_3
+[       OK ] TestLife.conway_revive_3 (3 ms)
+[ RUN      ] TestLife.conway_revive_4
+[       OK ] TestLife.conway_revive_4 (4 ms)
+[ RUN      ] TestLife.conway_time_to_mutate_1
+[       OK ] TestLife.conway_time_to_mutate_1 (2 ms)
+[ RUN      ] TestLife.conway_time_to_mutate_2
+[       OK ] TestLife.conway_time_to_mutate_2 (3 ms)
+[ RUN      ] TestLife.conway_time_to_mutate_3
+[       OK ] TestLife.conway_time_to_mutate_3 (2 ms)
+[ RUN      ] TestLife.conway_neighbor_coordinates_1
+[       OK ] TestLife.conway_neighbor_coordinates_1 (8 ms)
+[ RUN      ] TestLife.conway_neighbor_coordinates_2
+[       OK ] TestLife.conway_neighbor_coordinates_2 (3 ms)
+[ RUN      ] TestLife.conway_neighbor_coordinates_3
+[       OK ] TestLife.conway_neighbor_coordinates_3 (3 ms)
+[ RUN      ] TestLife.conway_neighbor_coordinates_4
+[       OK ] TestLife.conway_neighbor_coordinates_4 (3 ms)
+[ RUN      ] TestLife.conway_neighbor_coordinates_5
+[       OK ] TestLife.conway_neighbor_coordinates_5 (3 ms)
+[ RUN      ] TestLife.conway_neighbor_coordinates_6
+[       OK ] TestLife.conway_neighbor_coordinates_6 (3 ms)
+[ RUN      ] TestLife.conway_neighbor_coordinates_7
+[       OK ] TestLife.conway_neighbor_coordinates_7 (3 ms)
+[ RUN      ] TestLife.conway_neighbor_coordinates_8
+[       OK ] TestLife.conway_neighbor_coordinates_8 (2 ms)
+[ RUN      ] TestLife.fredkincell_construction_1
+[       OK ] TestLife.fredkincell_construction_1 (4 ms)
+[ RUN      ] TestLife.fredkincell_construction_2
+[       OK ] TestLife.fredkincell_construction_2 (2 ms)
+[ RUN      ] TestLife.fredkincell_construction_3
+[       OK ] TestLife.fredkincell_construction_3 (3 ms)
+[ RUN      ] TestLife.fredkin_neighbor_directions_1
+[       OK ] TestLife.fredkin_neighbor_directions_1 (3 ms)
+[ RUN      ] TestLife.fredkin_neighbor_directions_2
+[       OK ] TestLife.fredkin_neighbor_directions_2 (3 ms)
+[ RUN      ] TestLife.fredkin_neighbor_directions_3
+[       OK ] TestLife.fredkin_neighbor_directions_3 (3 ms)
+[ RUN      ] TestLife.fredkin_neighbor_directions_4
+[       OK ] TestLife.fredkin_neighbor_directions_4 (3 ms)
+[ RUN      ] TestLife.fredkin_is_alive_1
+[       OK ] TestLife.fredkin_is_alive_1 (2 ms)
+[ RUN      ] TestLife.fredkin_is_alive_2
+[       OK ] TestLife.fredkin_is_alive_2 (2 ms)
+[ RUN      ] TestLife.fredkincell_evolve_1
+[       OK ] TestLife.fredkincell_evolve_1 (3 ms)
+[ RUN      ] TestLife.fredkincell_evolve_2
+[       OK ] TestLife.fredkincell_evolve_2 (3 ms)
+[ RUN      ] TestLife.fredkincell_evolve_3
+[       OK ] TestLife.fredkincell_evolve_3 (2 ms)
+[ RUN      ] TestLife.fredkincell_evolve_4
+[       OK ] TestLife.fredkincell_evolve_4 (2 ms)
+[ RUN      ] TestLife.fredkincell_evolve_5
+[       OK ] TestLife.fredkincell_evolve_5 (2 ms)
+[ RUN      ] TestLife.fredkincell_evolve_6
+[       OK ] TestLife.fredkincell_evolve_6 (3 ms)
+[ RUN      ] TestLife.fredkincell_evolve_7
+[       OK ] TestLife.fredkincell_evolve_7 (3 ms)
+[ RUN      ] TestLife.fredkincell_evolve_8
+[       OK ] TestLife.fredkincell_evolve_8 (2 ms)
+[ RUN      ] TestLife.fredkincell_evolve_9
+[       OK ] TestLife.fredkincell_evolve_9 (2 ms)
+[ RUN      ] TestLife.fredkincell_evolve_10
+[       OK ] TestLife.fredkincell_evolve_10 (3 ms)
+[ RUN      ] TestLife.fredkincell_evolve_11
+[       OK ] TestLife.fredkincell_evolve_11 (4 ms)
+[ RUN      ] TestLife.fredkincell_evolve_12
+[       OK ] TestLife.fredkincell_evolve_12 (4 ms)
+[ RUN      ] TestLife.fredkincell_evolve_13
+[       OK ] TestLife.fredkincell_evolve_13 (5 ms)
+[ RUN      ] TestLife.fredkin_kill_1
+[       OK ] TestLife.fredkin_kill_1 (3 ms)
+[ RUN      ] TestLife.fredkin_kill_2
+[       OK ] TestLife.fredkin_kill_2 (2 ms)
+[ RUN      ] TestLife.fredkin_kill_3
+[       OK ] TestLife.fredkin_kill_3 (3 ms)
+[ RUN      ] TestLife.fredkin_time_to_mutate_1
+[       OK ] TestLife.fredkin_time_to_mutate_1 (2 ms)
+[ RUN      ] TestLife.fredkin_time_to_mutate_2
+[       OK ] TestLife.fredkin_time_to_mutate_2 (2 ms)
+[ RUN      ] TestLife.fredkin_time_to_mutate_3
+[       OK ] TestLife.fredkin_time_to_mutate_3 (2 ms)
+[ RUN      ] TestLife.fredkin_revive_1
+[       OK ] TestLife.fredkin_revive_1 (3 ms)
+[ RUN      ] TestLife.fredkin_revive_2
+[       OK ] TestLife.fredkin_revive_2 (2 ms)
+[ RUN      ] TestLife.fredkin_revive_3
+[       OK ] TestLife.fredkin_revive_3 (3 ms)
+[ RUN      ] TestLife.cell_constructor_1
+[       OK ] TestLife.cell_constructor_1 (4 ms)
+[ RUN      ] TestLife.cell_constructor_2
+[       OK ] TestLife.cell_constructor_2 (3 ms)
+[ RUN      ] TestLife.cell_constructor_3
+[       OK ] TestLife.cell_constructor_3 (2 ms)
+[ RUN      ] TestLife.cell_constructor_4
+[       OK ] TestLife.cell_constructor_4 (2 ms)
+[ RUN      ] TestLife.cell_evolve_1
+[       OK ] TestLife.cell_evolve_1 (2 ms)
+[ RUN      ] TestLife.cell_evolve_2
+[       OK ] TestLife.cell_evolve_2 (3 ms)
+[ RUN      ] TestLife.cell_evolve_3
+[       OK ] TestLife.cell_evolve_3 (3 ms)
+[ RUN      ] TestLife.cell_evolve_4
+[       OK ] TestLife.cell_evolve_4 (2 ms)
+[ RUN      ] TestLife.cell_evolve_5
+[       OK ] TestLife.cell_evolve_5 (2 ms)
+[ RUN      ] TestLife.cell_evolve_6
+[       OK ] TestLife.cell_evolve_6 (2 ms)
+[ RUN      ] TestLife.cell_evolve_7
+[       OK ] TestLife.cell_evolve_7 (2 ms)
+[ RUN      ] TestLife.cell_evolve_8
+[       OK ] TestLife.cell_evolve_8 (2 ms)
+[ RUN      ] TestLife.cell_evolve_9
+[       OK ] TestLife.cell_evolve_9 (2 ms)
+[ RUN      ] TestLife.cell_evolve_10
+[       OK ] TestLife.cell_evolve_10 (2 ms)
+[ RUN      ] TestLife.cell_evolve_11
+[       OK ] TestLife.cell_evolve_11 (3 ms)
+[ RUN      ] TestLife.cell_copy_assignment_1
+[       OK ] TestLife.cell_copy_assignment_1 (9 ms)
+[ RUN      ] TestLife.cell_copy_assignment_2
+[       OK ] TestLife.cell_copy_assignment_2 (4 ms)
+[ RUN      ] TestLife.cell_copy_assignment_3
+[       OK ] TestLife.cell_copy_assignment_3 (4 ms)
+[ RUN      ] TestLife.cell_copy_assignment_4
+[       OK ] TestLife.cell_copy_assignment_4 (4 ms)
+[ RUN      ] TestLife.cell_copy_assignment_5
+[       OK ] TestLife.cell_copy_assignment_5 (4 ms)
+[ RUN      ] TestLife.cell_copy_assignment_6
+[       OK ] TestLife.cell_copy_assignment_6 (5 ms)
+[ RUN      ] TestLife.at_1
+[       OK ] TestLife.at_1 (39 ms)
+[ RUN      ] TestLife.at_2
+[       OK ] TestLife.at_2 (4 ms)
+[ RUN      ] TestLife.at_3
+[       OK ] TestLife.at_3 (4 ms)
+[ RUN      ] TestLife.in_bounds_1
+[       OK ] TestLife.in_bounds_1 (3 ms)
+[ RUN      ] TestLife.in_bounds_2
+[       OK ] TestLife.in_bounds_2 (3 ms)
+[ RUN      ] TestLife.in_bounds_3
+[       OK ] TestLife.in_bounds_3 (3 ms)
+[ RUN      ] TestLife.in_bounds_4
+[       OK ] TestLife.in_bounds_4 (3 ms)
+[ RUN      ] TestLife.in_bounds_5
+[       OK ] TestLife.in_bounds_5 (4 ms)
+[ RUN      ] TestLife.in_bounds_6
+[       OK ] TestLife.in_bounds_6 (3 ms)
+[ RUN      ] TestLife.in_bounds_7
+[       OK ] TestLife.in_bounds_7 (3 ms)
+[ RUN      ] TestLife.in_bounds_8
+[       OK ] TestLife.in_bounds_8 (3 ms)
+[ RUN      ] TestLife.simulate_generation_1
+[       OK ] TestLife.simulate_generation_1 (12 ms)
+[ RUN      ] TestLife.simulate_generation_2
+[       OK ] TestLife.simulate_generation_2 (6 ms)
+[ RUN      ] TestLife.simulate_generation_3
+[       OK ] TestLife.simulate_generation_3 (25 ms)
+[----------] 99 tests from TestLife (385 ms total)
+
+[----------] Global test environment tear-down
+[==========] 99 tests from 1 test case ran. (414 ms total)
+[  PASSED  ] 99 tests.
+==17682== 
+==17682== HEAP SUMMARY:
+==17682==     in use at exit: 0 bytes in 0 blocks
+==17682==   total heap usage: 2,324 allocs, 2,324 frees, 251,219 bytes allocated
+==17682== 
+==17682== All heap blocks were freed -- no leaks are possible
+==17682== 
+==17682== For counts of detected and suppressed errors, rerun with: -v
+==17682== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:94.96% of 139
+Branches executed:90.83% of 218
+Taken at least once:68.35% of 218
+Calls executed:73.89% of 157
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 526
+Branches executed:61.41% of 3130
+Taken at least once:30.70% of 3130
+Calls executed:49.53% of 3608
+Creating 'TestLife.c++.gcov'
