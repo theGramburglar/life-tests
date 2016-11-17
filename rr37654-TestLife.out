@@ -1,0 +1,275 @@
+==21024== Memcheck, a memory error detector
+==21024== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==21024== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==21024== Command: ./TestLife
+==21024== 
+Running main() from gtest_main.cc
+[==========] Running 90 tests from 21 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from ConwayCellConstructor
+[ RUN      ] ConwayCellConstructor.test1
+[       OK ] ConwayCellConstructor.test1 (6 ms)
+[ RUN      ] ConwayCellConstructor.test2
+[       OK ] ConwayCellConstructor.test2 (5 ms)
+[----------] 2 tests from ConwayCellConstructor (18 ms total)
+
+[----------] 2 tests from ConwayCellCopyConstructor
+[ RUN      ] ConwayCellCopyConstructor.test1
+[       OK ] ConwayCellCopyConstructor.test1 (2 ms)
+[ RUN      ] ConwayCellCopyConstructor.test2
+[       OK ] ConwayCellCopyConstructor.test2 (2 ms)
+[----------] 2 tests from ConwayCellCopyConstructor (4 ms total)
+
+[----------] 2 tests from FredkinCellConstructor
+[ RUN      ] FredkinCellConstructor.test1
+[       OK ] FredkinCellConstructor.test1 (1 ms)
+[ RUN      ] FredkinCellConstructor.test2
+[       OK ] FredkinCellConstructor.test2 (3 ms)
+[----------] 2 tests from FredkinCellConstructor (4 ms total)
+
+[----------] 3 tests from FredkinCellCopyConstructor
+[ RUN      ] FredkinCellCopyConstructor.test1
+[       OK ] FredkinCellCopyConstructor.test1 (2 ms)
+[ RUN      ] FredkinCellCopyConstructor.test2
+[       OK ] FredkinCellCopyConstructor.test2 (2 ms)
+[ RUN      ] FredkinCellCopyConstructor.test3
+[       OK ] FredkinCellCopyConstructor.test3 (2 ms)
+[----------] 3 tests from FredkinCellCopyConstructor (6 ms total)
+
+[----------] 3 tests from CellConstructor
+[ RUN      ] CellConstructor.test1
+[       OK ] CellConstructor.test1 (2 ms)
+[ RUN      ] CellConstructor.test2
+[       OK ] CellConstructor.test2 (3 ms)
+[ RUN      ] CellConstructor.test3
+[       OK ] CellConstructor.test3 (2 ms)
+[----------] 3 tests from CellConstructor (7 ms total)
+
+[----------] 3 tests from CellCopyConstructor
+[ RUN      ] CellCopyConstructor.test1
+[       OK ] CellCopyConstructor.test1 (2 ms)
+[ RUN      ] CellCopyConstructor.test2
+[       OK ] CellCopyConstructor.test2 (2 ms)
+[ RUN      ] CellCopyConstructor.test3
+[       OK ] CellCopyConstructor.test3 (2 ms)
+[----------] 3 tests from CellCopyConstructor (6 ms total)
+
+[----------] 3 tests from CellCopyAssign
+[ RUN      ] CellCopyAssign.test1
+[       OK ] CellCopyAssign.test1 (4 ms)
+[ RUN      ] CellCopyAssign.test2
+[       OK ] CellCopyAssign.test2 (3 ms)
+[ RUN      ] CellCopyAssign.test3
+[       OK ] CellCopyAssign.test3 (2 ms)
+[----------] 3 tests from CellCopyAssign (9 ms total)
+
+[----------] 6 tests from ConwayCellUpdateSelf
+[ RUN      ] ConwayCellUpdateSelf.test1
+[       OK ] ConwayCellUpdateSelf.test1 (1 ms)
+[ RUN      ] ConwayCellUpdateSelf.test2
+[       OK ] ConwayCellUpdateSelf.test2 (2 ms)
+[ RUN      ] ConwayCellUpdateSelf.test3
+[       OK ] ConwayCellUpdateSelf.test3 (1 ms)
+[ RUN      ] ConwayCellUpdateSelf.test4
+[       OK ] ConwayCellUpdateSelf.test4 (2 ms)
+[ RUN      ] ConwayCellUpdateSelf.test5
+[       OK ] ConwayCellUpdateSelf.test5 (2 ms)
+[ RUN      ] ConwayCellUpdateSelf.test6
+[       OK ] ConwayCellUpdateSelf.test6 (2 ms)
+[----------] 6 tests from ConwayCellUpdateSelf (10 ms total)
+
+[----------] 7 tests from FredkinCellUpdateSelf
+[ RUN      ] FredkinCellUpdateSelf.test1
+[       OK ] FredkinCellUpdateSelf.test1 (1 ms)
+[ RUN      ] FredkinCellUpdateSelf.test2
+[       OK ] FredkinCellUpdateSelf.test2 (2 ms)
+[ RUN      ] FredkinCellUpdateSelf.test3
+[       OK ] FredkinCellUpdateSelf.test3 (1 ms)
+[ RUN      ] FredkinCellUpdateSelf.test4
+[       OK ] FredkinCellUpdateSelf.test4 (1 ms)
+[ RUN      ] FredkinCellUpdateSelf.test5
+[       OK ] FredkinCellUpdateSelf.test5 (2 ms)
+[ RUN      ] FredkinCellUpdateSelf.test6
+[       OK ] FredkinCellUpdateSelf.test6 (2 ms)
+[ RUN      ] FredkinCellUpdateSelf.test7
+[       OK ] FredkinCellUpdateSelf.test7 (3 ms)
+[----------] 7 tests from FredkinCellUpdateSelf (14 ms total)
+
+[----------] 2 tests from AbstractCellUpdateSelf
+[ RUN      ] AbstractCellUpdateSelf.test1
+[       OK ] AbstractCellUpdateSelf.test1 (1 ms)
+[ RUN      ] AbstractCellUpdateSelf.test2
+[       OK ] AbstractCellUpdateSelf.test2 (2 ms)
+[----------] 2 tests from AbstractCellUpdateSelf (3 ms total)
+
+[----------] 6 tests from CellUpdateSelf
+[ RUN      ] CellUpdateSelf.test1
+[       OK ] CellUpdateSelf.test1 (2 ms)
+[ RUN      ] CellUpdateSelf.test2
+[       OK ] CellUpdateSelf.test2 (2 ms)
+[ RUN      ] CellUpdateSelf.test3
+[       OK ] CellUpdateSelf.test3 (1 ms)
+[ RUN      ] CellUpdateSelf.test4
+[       OK ] CellUpdateSelf.test4 (2 ms)
+[ RUN      ] CellUpdateSelf.test5
+[       OK ] CellUpdateSelf.test5 (4 ms)
+[ RUN      ] CellUpdateSelf.test6
+[       OK ] CellUpdateSelf.test6 (2 ms)
+[----------] 6 tests from CellUpdateSelf (14 ms total)
+
+[----------] 5 tests from ConwayDisplay
+[ RUN      ] ConwayDisplay.test1
+[       OK ] ConwayDisplay.test1 (2 ms)
+[ RUN      ] ConwayDisplay.test2
+[       OK ] ConwayDisplay.test2 (2 ms)
+[ RUN      ] ConwayDisplay.test3
+[       OK ] ConwayDisplay.test3 (2 ms)
+[ RUN      ] ConwayDisplay.test4
+[       OK ] ConwayDisplay.test4 (1 ms)
+[ RUN      ] ConwayDisplay.test5
+[       OK ] ConwayDisplay.test5 (2 ms)
+[----------] 5 tests from ConwayDisplay (10 ms total)
+
+[----------] 7 tests from FredkinDisplay
+[ RUN      ] FredkinDisplay.test1
+[       OK ] FredkinDisplay.test1 (1 ms)
+[ RUN      ] FredkinDisplay.test2
+[       OK ] FredkinDisplay.test2 (1 ms)
+[ RUN      ] FredkinDisplay.test3
+[       OK ] FredkinDisplay.test3 (2 ms)
+[ RUN      ] FredkinDisplay.test4
+[       OK ] FredkinDisplay.test4 (1 ms)
+[ RUN      ] FredkinDisplay.test5
+[       OK ] FredkinDisplay.test5 (2 ms)
+[ RUN      ] FredkinDisplay.test6
+[       OK ] FredkinDisplay.test6 (2 ms)
+[ RUN      ] FredkinDisplay.test7
+[       OK ] FredkinDisplay.test7 (3 ms)
+[----------] 7 tests from FredkinDisplay (15 ms total)
+
+[----------] 6 tests from OutAbstractCell
+[ RUN      ] OutAbstractCell.test1
+[       OK ] OutAbstractCell.test1 (3 ms)
+[ RUN      ] OutAbstractCell.test2
+[       OK ] OutAbstractCell.test2 (2 ms)
+[ RUN      ] OutAbstractCell.test3
+[       OK ] OutAbstractCell.test3 (3 ms)
+[ RUN      ] OutAbstractCell.test4
+[       OK ] OutAbstractCell.test4 (2 ms)
+[ RUN      ] OutAbstractCell.test5
+[       OK ] OutAbstractCell.test5 (3 ms)
+[ RUN      ] OutAbstractCell.test6
+[       OK ] OutAbstractCell.test6 (3 ms)
+[----------] 6 tests from OutAbstractCell (16 ms total)
+
+[----------] 5 tests from OutCell
+[ RUN      ] OutCell.test1
+[       OK ] OutCell.test1 (2 ms)
+[ RUN      ] OutCell.test2
+[       OK ] OutCell.test2 (3 ms)
+[ RUN      ] OutCell.test3
+[       OK ] OutCell.test3 (2 ms)
+[ RUN      ] OutCell.test4
+[       OK ] OutCell.test4 (2 ms)
+[ RUN      ] OutCell.test5
+[       OK ] OutCell.test5 (3 ms)
+[----------] 5 tests from OutCell (12 ms total)
+
+[----------] 2 tests from LifeConstructor
+[ RUN      ] LifeConstructor.test1
+[       OK ] LifeConstructor.test1 (5 ms)
+[ RUN      ] LifeConstructor.test2
+[       OK ] LifeConstructor.test2 (1 ms)
+[----------] 2 tests from LifeConstructor (6 ms total)
+
+[----------] 8 tests from LifeIn
+[ RUN      ] LifeIn.test1
+[       OK ] LifeIn.test1 (16 ms)
+[ RUN      ] LifeIn.test2
+[       OK ] LifeIn.test2 (3 ms)
+[ RUN      ] LifeIn.test3
+[       OK ] LifeIn.test3 (3 ms)
+[ RUN      ] LifeIn.test4
+[       OK ] LifeIn.test4 (2 ms)
+[ RUN      ] LifeIn.test5
+[       OK ] LifeIn.test5 (16 ms)
+[ RUN      ] LifeIn.test6
+[       OK ] LifeIn.test6 (3 ms)
+[ RUN      ] LifeIn.test7
+[       OK ] LifeIn.test7 (18 ms)
+[ RUN      ] LifeIn.test8
+[       OK ] LifeIn.test8 (4 ms)
+[----------] 8 tests from LifeIn (65 ms total)
+
+[----------] 5 tests from LifeFindNearby
+[ RUN      ] LifeFindNearby.test1
+[       OK ] LifeFindNearby.test1 (9 ms)
+[ RUN      ] LifeFindNearby.test2
+[       OK ] LifeFindNearby.test2 (3 ms)
+[ RUN      ] LifeFindNearby.test3
+[       OK ] LifeFindNearby.test3 (3 ms)
+[ RUN      ] LifeFindNearby.test4
+[       OK ] LifeFindNearby.test4 (4 ms)
+[ RUN      ] LifeFindNearby.test5
+[       OK ] LifeFindNearby.test5 (3 ms)
+[----------] 5 tests from LifeFindNearby (22 ms total)
+
+[----------] 4 tests from AbstractCellTellNeighbors
+[ RUN      ] AbstractCellTellNeighbors.test1
+[       OK ] AbstractCellTellNeighbors.test1 (2 ms)
+[ RUN      ] AbstractCellTellNeighbors.test2
+[       OK ] AbstractCellTellNeighbors.test2 (3 ms)
+[ RUN      ] AbstractCellTellNeighbors.test3
+[       OK ] AbstractCellTellNeighbors.test3 (1 ms)
+[ RUN      ] AbstractCellTellNeighbors.test4
+[       OK ] AbstractCellTellNeighbors.test4 (2 ms)
+[----------] 4 tests from AbstractCellTellNeighbors (8 ms total)
+
+[----------] 3 tests from LifeOut
+[ RUN      ] LifeOut.test1
+[       OK ] LifeOut.test1 (4 ms)
+[ RUN      ] LifeOut.test2
+[       OK ] LifeOut.test2 (7 ms)
+[ RUN      ] LifeOut.test3
+[       OK ] LifeOut.test3 (3 ms)
+[----------] 3 tests from LifeOut (14 ms total)
+
+[----------] 6 tests from LifeRun
+[ RUN      ] LifeRun.test1
+[       OK ] LifeRun.test1 (3 ms)
+[ RUN      ] LifeRun.test2
+[       OK ] LifeRun.test2 (9 ms)
+[ RUN      ] LifeRun.test3
+[       OK ] LifeRun.test3 (9 ms)
+[ RUN      ] LifeRun.test4
+[       OK ] LifeRun.test4 (16 ms)
+[ RUN      ] LifeRun.test5
+[       OK ] LifeRun.test5 (6 ms)
+[ RUN      ] LifeRun.test6
+[       OK ] LifeRun.test6 (3 ms)
+[----------] 6 tests from LifeRun (47 ms total)
+
+[----------] Global test environment tear-down
+[==========] 90 tests from 21 test cases ran. (345 ms total)
+[  PASSED  ] 90 tests.
+==21024== 
+==21024== HEAP SUMMARY:
+==21024==     in use at exit: 0 bytes in 0 blocks
+==21024==   total heap usage: 2,647 allocs, 2,647 frees, 320,860 bytes allocated
+==21024== 
+==21024== All heap blocks were freed -- no leaks are possible
+==21024== 
+==21024== For counts of detected and suppressed errors, rerun with: -v
+==21024== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:97.37% of 152
+Branches executed:91.06% of 246
+Taken at least once:73.17% of 246
+Calls executed:83.78% of 148
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 699
+Branches executed:100.00% of 1154
+Taken at least once:51.65% of 1154
+Calls executed:76.35% of 1835
+Creating 'TestLife.c++.gcov'
