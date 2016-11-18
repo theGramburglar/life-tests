@@ -1,0 +1,145 @@
+==92== Memcheck, a memory error detector
+==92== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==92== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==92== Command: ./TestLife
+==92== 
+Running main() from gtest_main.cc
+[==========] Running 34 tests from 13 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from LifeConstructor
+[ RUN      ] LifeConstructor.dimensions
+[       OK ] LifeConstructor.dimensions (115 ms)
+[ RUN      ] LifeConstructor.grid1
+[       OK ] LifeConstructor.grid1 (9 ms)
+[ RUN      ] LifeConstructor.grid2
+[       OK ] LifeConstructor.grid2 (58 ms)
+[----------] 3 tests from LifeConstructor (196 ms total)
+
+[----------] 3 tests from InitGrid
+[ RUN      ] InitGrid.badInput
+[       OK ] InitGrid.badInput (64 ms)
+[ RUN      ] InitGrid.goodInput1
+[       OK ] InitGrid.goodInput1 (9 ms)
+[ RUN      ] InitGrid.goodInput2
+[       OK ] InitGrid.goodInput2 (4 ms)
+[----------] 3 tests from InitGrid (78 ms total)
+
+[----------] 2 tests from Evolve
+[ RUN      ] Evolve.test1
+[       OK ] Evolve.test1 (19 ms)
+[ RUN      ] Evolve.test2
+[       OK ] Evolve.test2 (59 ms)
+[----------] 2 tests from Evolve (79 ms total)
+
+[----------] 3 tests from LifeSimulate
+[ RUN      ] LifeSimulate.fredkinCell
+[       OK ] LifeSimulate.fredkinCell (19 ms)
+[ RUN      ] LifeSimulate.conwayCell
+[       OK ] LifeSimulate.conwayCell (14 ms)
+[ RUN      ] LifeSimulate.cell
+[       OK ] LifeSimulate.cell (20 ms)
+[----------] 3 tests from LifeSimulate (55 ms total)
+
+[----------] 2 tests from SaveGrid
+[ RUN      ] SaveGrid.test1
+[       OK ] SaveGrid.test1 (5 ms)
+[ RUN      ] SaveGrid.test2
+[       OK ] SaveGrid.test2 (5 ms)
+[----------] 2 tests from SaveGrid (10 ms total)
+
+[----------] 2 tests from PrintGrid
+[ RUN      ] PrintGrid.test1
+[       OK ] PrintGrid.test1 (6 ms)
+[ RUN      ] PrintGrid.test2
+[       OK ] PrintGrid.test2 (5 ms)
+[----------] 2 tests from PrintGrid (12 ms total)
+
+[----------] 3 tests from LivingPopulation
+[ RUN      ] LivingPopulation.test1
+[       OK ] LivingPopulation.test1 (5 ms)
+[ RUN      ] LivingPopulation.test2
+[       OK ] LivingPopulation.test2 (5 ms)
+[ RUN      ] LivingPopulation.test3
+[       OK ] LivingPopulation.test3 (5 ms)
+[----------] 3 tests from LivingPopulation (15 ms total)
+
+[----------] 3 tests from Split
+[ RUN      ] Split.test1
+[       OK ] Split.test1 (7 ms)
+[ RUN      ] Split.test2
+[       OK ] Split.test2 (6 ms)
+[ RUN      ] Split.test3
+[       OK ] Split.test3 (6 ms)
+[----------] 3 tests from Split (19 ms total)
+
+[----------] 2 tests from PrintCell
+[ RUN      ] PrintCell.test1
+[       OK ] PrintCell.test1 (4 ms)
+[ RUN      ] PrintCell.test2
+[       OK ] PrintCell.test2 (4 ms)
+[----------] 2 tests from PrintCell (8 ms total)
+
+[----------] 2 tests from CopyInto
+[ RUN      ] CopyInto.test1
+[       OK ] CopyInto.test1 (3 ms)
+[ RUN      ] CopyInto.test2
+[       OK ] CopyInto.test2 (3 ms)
+[----------] 2 tests from CopyInto (6 ms total)
+
+[----------] 4 tests from FindNeighbors
+[ RUN      ] FindNeighbors.test1
+[       OK ] FindNeighbors.test1 (27 ms)
+[ RUN      ] FindNeighbors.test2
+[       OK ] FindNeighbors.test2 (6 ms)
+[ RUN      ] FindNeighbors.test3
+[       OK ] FindNeighbors.test3 (6 ms)
+[ RUN      ] FindNeighbors.test4
+[       OK ] FindNeighbors.test4 (5 ms)
+[----------] 4 tests from FindNeighbors (45 ms total)
+
+[----------] 4 tests from CellEvolve
+[ RUN      ] CellEvolve.test1
+[       OK ] CellEvolve.test1 (6 ms)
+[ RUN      ] CellEvolve.test2
+[       OK ] CellEvolve.test2 (6 ms)
+[ RUN      ] CellEvolve.test3
+[       OK ] CellEvolve.test3 (5 ms)
+[ RUN      ] CellEvolve.test4
+[       OK ] CellEvolve.test4 (5 ms)
+[----------] 4 tests from CellEvolve (23 ms total)
+
+[----------] 1 test from CellClone
+[ RUN      ] CellClone.test1
+[       OK ] CellClone.test1 (6 ms)
+[----------] 1 test from CellClone (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 34 tests from 13 test cases ran. (620 ms total)
+[  PASSED  ] 34 tests.
+==92== 
+==92== HEAP SUMMARY:
+==92==     in use at exit: 77,344 bytes in 177 blocks
+==92==   total heap usage: 1,137 allocs, 960 frees, 217,889 bytes allocated
+==92== 
+==92== LEAK SUMMARY:
+==92==    definitely lost: 3,936 bytes in 88 blocks
+==92==    indirectly lost: 704 bytes in 88 blocks
+==92==      possibly lost: 0 bytes in 0 blocks
+==92==    still reachable: 72,704 bytes in 1 blocks
+==92==         suppressed: 0 bytes in 0 blocks
+==92== Rerun with --leak-check=full to see details of leaked memory
+==92== 
+==92== For counts of detected and suppressed errors, rerun with: -v
+==92== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:94.44% of 252
+Branches executed:92.54% of 456
+Taken at least once:68.20% of 456
+Calls executed:82.84% of 402
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:99.65% of 286
+Branches executed:77.01% of 1270
+Taken at least once:38.50% of 1270
+Calls executed:63.27% of 1402
+Creating 'TestLife.c++.gcov'
