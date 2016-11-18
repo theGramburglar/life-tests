@@ -1,0 +1,719 @@
+==5787== Memcheck, a memory error detector
+==5787== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==5787== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==5787== Command: ./TestLife
+==5787== 
+Running main() from gtest_main.cc
+[==========] Running 104 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 104 tests from LifeFixture
+[ RUN      ] LifeFixture.test_1
+[       OK ] LifeFixture.test_1 (103 ms)
+[ RUN      ] LifeFixture.test_2
+[       OK ] LifeFixture.test_2 (5 ms)
+[ RUN      ] LifeFixture.test_3
+==5787== Invalid read of size 4
+==5787==    at 0x4487FC: AbstractCell::operator=(AbstractCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x448862: ConwayCell::operator=(ConwayCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x448CBD: Life<ConwayCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44788F: Life<ConwayCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x406204: LifeFixture_test_3_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5c653b8 is 8 bytes after a block of size 16 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x457BF5: __gnu_cxx::new_allocator<ConwayCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x455FA4: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4532B0: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44FD62: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_Vector_base(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44D4DF: std::vector<ConwayCell, std::allocator<ConwayCell> >::vector(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4480C0: Life<ConwayCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4477CA: Life<ConwayCell>::lifeSetup(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4061C7: LifeFixture_test_3_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+==5787== Invalid read of size 1
+==5787==    at 0x44880A: AbstractCell::operator=(AbstractCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x448862: ConwayCell::operator=(ConwayCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x448CBD: Life<ConwayCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44788F: Life<ConwayCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x406204: LifeFixture_test_3_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5c653bc is 12 bytes after a block of size 16 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x457BF5: __gnu_cxx::new_allocator<ConwayCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x455FA4: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4532B0: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44FD62: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_Vector_base(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44D4DF: std::vector<ConwayCell, std::allocator<ConwayCell> >::vector(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4480C0: Life<ConwayCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4477CA: Life<ConwayCell>::lifeSetup(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4061C7: LifeFixture_test_3_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+==5787== Invalid read of size 1
+==5787==    at 0x448867: ConwayCell::operator=(ConwayCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x448CBD: Life<ConwayCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44788F: Life<ConwayCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x406204: LifeFixture_test_3_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5c653bd is 13 bytes after a block of size 16 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x457BF5: __gnu_cxx::new_allocator<ConwayCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x455FA4: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4532B0: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44FD62: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_Vector_base(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44D4DF: std::vector<ConwayCell, std::allocator<ConwayCell> >::vector(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4480C0: Life<ConwayCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4477CA: Life<ConwayCell>::lifeSetup(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4061C7: LifeFixture_test_3_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_3 (10 ms)
+[ RUN      ] LifeFixture.test_4
+==5787== Invalid read of size 1
+==5787==    at 0x448867: ConwayCell::operator=(ConwayCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x448CBD: Life<ConwayCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44788F: Life<ConwayCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4069D1: LifeFixture_test_4_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5c6631d is 13 bytes after a block of size 16 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x457BF5: __gnu_cxx::new_allocator<ConwayCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x455FA4: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4532B0: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44FD62: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_Vector_base(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44D4DF: std::vector<ConwayCell, std::allocator<ConwayCell> >::vector(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4480C0: Life<ConwayCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4477CA: Life<ConwayCell>::lifeSetup(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x406985: LifeFixture_test_4_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_4 (4 ms)
+[ RUN      ] LifeFixture.test_5
+[       OK ] LifeFixture.test_5 (4 ms)
+[ RUN      ] LifeFixture.test_6
+[       OK ] LifeFixture.test_6 (3 ms)
+[ RUN      ] LifeFixture.test_7
+[       OK ] LifeFixture.test_7 (3 ms)
+[ RUN      ] LifeFixture.test_8
+[       OK ] LifeFixture.test_8 (3 ms)
+[ RUN      ] LifeFixture.test_9
+[       OK ] LifeFixture.test_9 (11 ms)
+[ RUN      ] LifeFixture.test_10
+[       OK ] LifeFixture.test_10 (4 ms)
+[ RUN      ] LifeFixture.test_11
+[       OK ] LifeFixture.test_11 (5 ms)
+[ RUN      ] LifeFixture.test_12
+[       OK ] LifeFixture.test_12 (4 ms)
+[ RUN      ] LifeFixture.test_13
+[       OK ] LifeFixture.test_13 (5 ms)
+[ RUN      ] LifeFixture.test_14
+[       OK ] LifeFixture.test_14 (4 ms)
+[ RUN      ] LifeFixture.test_15
+[       OK ] LifeFixture.test_15 (4 ms)
+[ RUN      ] LifeFixture.test_16
+[       OK ] LifeFixture.test_16 (5 ms)
+[ RUN      ] LifeFixture.test_17
+[       OK ] LifeFixture.test_17 (4 ms)
+[ RUN      ] LifeFixture.test_18
+[       OK ] LifeFixture.test_18 (5 ms)
+[ RUN      ] LifeFixture.test_19
+[       OK ] LifeFixture.test_19 (4 ms)
+[ RUN      ] LifeFixture.test_20
+[       OK ] LifeFixture.test_20 (5 ms)
+[ RUN      ] LifeFixture.test_21
+[       OK ] LifeFixture.test_21 (4 ms)
+[ RUN      ] LifeFixture.test_22
+[       OK ] LifeFixture.test_22 (5 ms)
+[ RUN      ] LifeFixture.test_23
+[       OK ] LifeFixture.test_23 (5 ms)
+[ RUN      ] LifeFixture.test_24
+[       OK ] LifeFixture.test_24 (4 ms)
+[ RUN      ] LifeFixture.test_25
+==5787== Invalid read of size 1
+==5787==    at 0x448867: ConwayCell::operator=(ConwayCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x448CBD: Life<ConwayCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44788F: Life<ConwayCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4114B8: LifeFixture_test_25_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5c7c02d is 13 bytes after a block of size 48 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x457BF5: __gnu_cxx::new_allocator<ConwayCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x455FA4: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4532B0: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44FD62: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_Vector_base(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44D4DF: std::vector<ConwayCell, std::allocator<ConwayCell> >::vector(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4480C0: Life<ConwayCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x41143E: LifeFixture_test_25_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_25 (4 ms)
+[ RUN      ] LifeFixture.test_26
+==5787== Invalid read of size 1
+==5787==    at 0x448867: ConwayCell::operator=(ConwayCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x448CBD: Life<ConwayCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44788F: Life<ConwayCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x411A58: LifeFixture_test_26_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5c7d67d is 13 bytes after a block of size 48 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x457BF5: __gnu_cxx::new_allocator<ConwayCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x455FA4: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4532B0: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44FD62: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_Vector_base(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44D4DF: std::vector<ConwayCell, std::allocator<ConwayCell> >::vector(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4480C0: Life<ConwayCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4119D2: LifeFixture_test_26_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_26 (4 ms)
+[ RUN      ] LifeFixture.test_27
+==5787== Invalid read of size 1
+==5787==    at 0x448867: ConwayCell::operator=(ConwayCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x448CBD: Life<ConwayCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44788F: Life<ConwayCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x412014: LifeFixture_test_27_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5c807cd is 13 bytes after a block of size 48 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x457BF5: __gnu_cxx::new_allocator<ConwayCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x455FA4: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4532B0: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44FD62: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_Vector_base(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44D4DF: std::vector<ConwayCell, std::allocator<ConwayCell> >::vector(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4480C0: Life<ConwayCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x411F8E: LifeFixture_test_27_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_27 (6 ms)
+[ RUN      ] LifeFixture.test_28
+==5787== Invalid read of size 1
+==5787==    at 0x448867: ConwayCell::operator=(ConwayCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x448CBD: Life<ConwayCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44788F: Life<ConwayCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4125D0: LifeFixture_test_28_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5c85add is 13 bytes after a block of size 48 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x457BF5: __gnu_cxx::new_allocator<ConwayCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x455FA4: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4532B0: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44FD62: std::_Vector_base<ConwayCell, std::allocator<ConwayCell> >::_Vector_base(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44D4DF: std::vector<ConwayCell, std::allocator<ConwayCell> >::vector(unsigned long, std::allocator<ConwayCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4480C0: Life<ConwayCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x41254A: LifeFixture_test_28_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_28 (25 ms)
+[ RUN      ] LifeFixture.test_29
+[       OK ] LifeFixture.test_29 (4 ms)
+[ RUN      ] LifeFixture.test_30
+[       OK ] LifeFixture.test_30 (4 ms)
+[ RUN      ] LifeFixture.test_31
+[       OK ] LifeFixture.test_31 (4 ms)
+[ RUN      ] LifeFixture.test_32
+[       OK ] LifeFixture.test_32 (4 ms)
+[ RUN      ] LifeFixture.test_33
+[       OK ] LifeFixture.test_33 (5 ms)
+[ RUN      ] LifeFixture.test_34
+[       OK ] LifeFixture.test_34 (5 ms)
+[ RUN      ] LifeFixture.test_35
+[       OK ] LifeFixture.test_35 (5 ms)
+[ RUN      ] LifeFixture.test_36
+[       OK ] LifeFixture.test_36 (5 ms)
+[ RUN      ] LifeFixture.test_37
+[       OK ] LifeFixture.test_37 (5 ms)
+[ RUN      ] LifeFixture.test_38
+[       OK ] LifeFixture.test_38 (5 ms)
+[ RUN      ] LifeFixture.test_39
+[       OK ] LifeFixture.test_39 (5 ms)
+[ RUN      ] LifeFixture.test_40
+[       OK ] LifeFixture.test_40 (6 ms)
+[ RUN      ] LifeFixture.test_41
+[       OK ] LifeFixture.test_41 (5 ms)
+[ RUN      ] LifeFixture.test_42
+[       OK ] LifeFixture.test_42 (5 ms)
+[ RUN      ] LifeFixture.test_43
+[       OK ] LifeFixture.test_43 (5 ms)
+[ RUN      ] LifeFixture.test_44
+[       OK ] LifeFixture.test_44 (5 ms)
+[ RUN      ] LifeFixture.test_45
+[       OK ] LifeFixture.test_45 (5 ms)
+[ RUN      ] LifeFixture.test_46
+[       OK ] LifeFixture.test_46 (5 ms)
+[ RUN      ] LifeFixture.test_47
+[       OK ] LifeFixture.test_47 (5 ms)
+[ RUN      ] LifeFixture.test_48
+[       OK ] LifeFixture.test_48 (5 ms)
+[ RUN      ] LifeFixture.test_49
+[       OK ] LifeFixture.test_49 (35 ms)
+[ RUN      ] LifeFixture.test_50
+[       OK ] LifeFixture.test_50 (5 ms)
+[ RUN      ] LifeFixture.test_51
+==5787== Invalid read of size 4
+==5787==    at 0x4487FC: AbstractCell::operator=(AbstractCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44A30E: FredkinCell::operator=(FredkinCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44A769: Life<FredkinCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449381: Life<FredkinCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x420B9E: LifeFixture_test_51_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5ccb8a8 is 8 bytes after a block of size 16 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x4585FD: __gnu_cxx::new_allocator<FredkinCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x456C9E: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4546D2: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x450C66: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_Vector_base(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44DFEF: std::vector<FredkinCell, std::allocator<FredkinCell> >::vector(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449BB2: Life<FredkinCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4492BC: Life<FredkinCell>::lifeSetup(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x420B61: LifeFixture_test_51_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+==5787== Invalid read of size 1
+==5787==    at 0x44880A: AbstractCell::operator=(AbstractCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44A30E: FredkinCell::operator=(FredkinCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44A769: Life<FredkinCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449381: Life<FredkinCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x420B9E: LifeFixture_test_51_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5ccb8ac is 12 bytes after a block of size 16 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x4585FD: __gnu_cxx::new_allocator<FredkinCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x456C9E: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4546D2: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x450C66: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_Vector_base(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44DFEF: std::vector<FredkinCell, std::allocator<FredkinCell> >::vector(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449BB2: Life<FredkinCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4492BC: Life<FredkinCell>::lifeSetup(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x420B61: LifeFixture_test_51_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+==5787== Invalid read of size 1
+==5787==    at 0x44A313: FredkinCell::operator=(FredkinCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44A769: Life<FredkinCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449381: Life<FredkinCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x420B9E: LifeFixture_test_51_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5ccb8ad is 13 bytes after a block of size 16 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x4585FD: __gnu_cxx::new_allocator<FredkinCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x456C9E: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4546D2: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x450C66: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_Vector_base(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44DFEF: std::vector<FredkinCell, std::allocator<FredkinCell> >::vector(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449BB2: Life<FredkinCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4492BC: Life<FredkinCell>::lifeSetup(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x420B61: LifeFixture_test_51_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_51 (10 ms)
+[ RUN      ] LifeFixture.test_52
+==5787== Invalid read of size 1
+==5787==    at 0x44A313: FredkinCell::operator=(FredkinCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44A769: Life<FredkinCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449381: Life<FredkinCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x42136B: LifeFixture_test_52_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5ccc80d is 13 bytes after a block of size 16 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x4585FD: __gnu_cxx::new_allocator<FredkinCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x456C9E: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4546D2: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x450C66: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_Vector_base(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44DFEF: std::vector<FredkinCell, std::allocator<FredkinCell> >::vector(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449BB2: Life<FredkinCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4492BC: Life<FredkinCell>::lifeSetup(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x42131F: LifeFixture_test_52_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_52 (5 ms)
+[ RUN      ] LifeFixture.test_53
+[       OK ] LifeFixture.test_53 (3 ms)
+[ RUN      ] LifeFixture.test_54
+[       OK ] LifeFixture.test_54 (3 ms)
+[ RUN      ] LifeFixture.test_55
+[       OK ] LifeFixture.test_55 (3 ms)
+[ RUN      ] LifeFixture.test_56
+[       OK ] LifeFixture.test_56 (3 ms)
+[ RUN      ] LifeFixture.test_57
+[       OK ] LifeFixture.test_57 (10 ms)
+[ RUN      ] LifeFixture.test_58
+[       OK ] LifeFixture.test_58 (5 ms)
+[ RUN      ] LifeFixture.test_59
+[       OK ] LifeFixture.test_59 (4 ms)
+[ RUN      ] LifeFixture.test_60
+[       OK ] LifeFixture.test_60 (4 ms)
+[ RUN      ] LifeFixture.test_61
+[       OK ] LifeFixture.test_61 (5 ms)
+[ RUN      ] LifeFixture.test_62
+[       OK ] LifeFixture.test_62 (4 ms)
+[ RUN      ] LifeFixture.test_63
+[       OK ] LifeFixture.test_63 (5 ms)
+[ RUN      ] LifeFixture.test_64
+[       OK ] LifeFixture.test_64 (4 ms)
+[ RUN      ] LifeFixture.test_65
+[       OK ] LifeFixture.test_65 (5 ms)
+[ RUN      ] LifeFixture.test_66
+[       OK ] LifeFixture.test_66 (5 ms)
+[ RUN      ] LifeFixture.test_67
+[       OK ] LifeFixture.test_67 (4 ms)
+[ RUN      ] LifeFixture.test_68
+[       OK ] LifeFixture.test_68 (5 ms)
+[ RUN      ] LifeFixture.test_69
+[       OK ] LifeFixture.test_69 (5 ms)
+[ RUN      ] LifeFixture.test_70
+[       OK ] LifeFixture.test_70 (4 ms)
+[ RUN      ] LifeFixture.test_71
+[       OK ] LifeFixture.test_71 (5 ms)
+[ RUN      ] LifeFixture.test_72
+[       OK ] LifeFixture.test_72 (4 ms)
+[ RUN      ] LifeFixture.test_73
+==5787== Invalid read of size 1
+==5787==    at 0x44A313: FredkinCell::operator=(FredkinCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44A769: Life<FredkinCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449381: Life<FredkinCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x42BE52: LifeFixture_test_73_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5ce251d is 13 bytes after a block of size 48 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x4585FD: __gnu_cxx::new_allocator<FredkinCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x456C9E: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4546D2: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x450C66: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_Vector_base(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44DFEF: std::vector<FredkinCell, std::allocator<FredkinCell> >::vector(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449BB2: Life<FredkinCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x42BDD8: LifeFixture_test_73_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_73 (5 ms)
+[ RUN      ] LifeFixture.test_74
+==5787== Invalid read of size 1
+==5787==    at 0x44A313: FredkinCell::operator=(FredkinCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44A769: Life<FredkinCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449381: Life<FredkinCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x42C3F2: LifeFixture_test_74_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5ce3b6d is 13 bytes after a block of size 48 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x4585FD: __gnu_cxx::new_allocator<FredkinCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x456C9E: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4546D2: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x450C66: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_Vector_base(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44DFEF: std::vector<FredkinCell, std::allocator<FredkinCell> >::vector(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449BB2: Life<FredkinCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x42C36C: LifeFixture_test_74_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_74 (4 ms)
+[ RUN      ] LifeFixture.test_75
+==5787== Invalid read of size 1
+==5787==    at 0x44A313: FredkinCell::operator=(FredkinCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44A769: Life<FredkinCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449381: Life<FredkinCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x42C9AE: LifeFixture_test_75_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5ce6cbd is 13 bytes after a block of size 48 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x4585FD: __gnu_cxx::new_allocator<FredkinCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x456C9E: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4546D2: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x450C66: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_Vector_base(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44DFEF: std::vector<FredkinCell, std::allocator<FredkinCell> >::vector(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449BB2: Life<FredkinCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x42C928: LifeFixture_test_75_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_75 (5 ms)
+[ RUN      ] LifeFixture.test_76
+==5787== Invalid read of size 1
+==5787==    at 0x44A313: FredkinCell::operator=(FredkinCell const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44A769: Life<FredkinCell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449381: Life<FredkinCell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x42CF6A: LifeFixture_test_76_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5cebfcd is 13 bytes after a block of size 48 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x4585FD: __gnu_cxx::new_allocator<FredkinCell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x456C9E: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x4546D2: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x450C66: std::_Vector_base<FredkinCell, std::allocator<FredkinCell> >::_Vector_base(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44DFEF: std::vector<FredkinCell, std::allocator<FredkinCell> >::vector(unsigned long, std::allocator<FredkinCell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x449BB2: Life<FredkinCell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x42CEE4: LifeFixture_test_76_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_76 (24 ms)
+[ RUN      ] LifeFixture.test_77
+[       OK ] LifeFixture.test_77 (4 ms)
+[ RUN      ] LifeFixture.test_78
+[       OK ] LifeFixture.test_78 (4 ms)
+[ RUN      ] LifeFixture.test_79
+[       OK ] LifeFixture.test_79 (4 ms)
+[ RUN      ] LifeFixture.test_80
+[       OK ] LifeFixture.test_80 (4 ms)
+[ RUN      ] LifeFixture.test_81
+[       OK ] LifeFixture.test_81 (5 ms)
+[ RUN      ] LifeFixture.test_82
+[       OK ] LifeFixture.test_82 (5 ms)
+[ RUN      ] LifeFixture.test_83
+[       OK ] LifeFixture.test_83 (5 ms)
+[ RUN      ] LifeFixture.test_84
+[       OK ] LifeFixture.test_84 (5 ms)
+[ RUN      ] LifeFixture.test_85
+[       OK ] LifeFixture.test_85 (5 ms)
+[ RUN      ] LifeFixture.test_86
+[       OK ] LifeFixture.test_86 (5 ms)
+[ RUN      ] LifeFixture.test_87
+[       OK ] LifeFixture.test_87 (5 ms)
+[ RUN      ] LifeFixture.test_88
+[       OK ] LifeFixture.test_88 (5 ms)
+[ RUN      ] LifeFixture.test_89
+[       OK ] LifeFixture.test_89 (5 ms)
+[ RUN      ] LifeFixture.test_90
+[       OK ] LifeFixture.test_90 (5 ms)
+[ RUN      ] LifeFixture.test_91
+[       OK ] LifeFixture.test_91 (5 ms)
+[ RUN      ] LifeFixture.test_92
+[       OK ] LifeFixture.test_92 (5 ms)
+[ RUN      ] LifeFixture.test_93
+[       OK ] LifeFixture.test_93 (5 ms)
+[ RUN      ] LifeFixture.test_94
+[       OK ] LifeFixture.test_94 (5 ms)
+[ RUN      ] LifeFixture.test_95
+[       OK ] LifeFixture.test_95 (5 ms)
+[ RUN      ] LifeFixture.test_96
+[       OK ] LifeFixture.test_96 (5 ms)
+[ RUN      ] LifeFixture.test_97
+[       OK ] LifeFixture.test_97 (56 ms)
+[ RUN      ] LifeFixture.test_98
+[       OK ] LifeFixture.test_98 (4 ms)
+[ RUN      ] LifeFixture.test_99
+[       OK ] LifeFixture.test_99 (5 ms)
+[ RUN      ] LifeFixture.test_100
+[       OK ] LifeFixture.test_100 (4 ms)
+[ RUN      ] LifeFixture.test_101
+[       OK ] LifeFixture.test_101 (6 ms)
+[ RUN      ] LifeFixture.test_102
+[       OK ] LifeFixture.test_102 (5 ms)
+[ RUN      ] LifeFixture.test_103
+==5787== Invalid read of size 8
+==5787==    at 0x44BB23: Life<Cell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44BFDB: Life<Cell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x43D1A8: LifeFixture_test_103_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5d3a0b8 is 0 bytes after a block of size 8 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x458979: __gnu_cxx::new_allocator<Cell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x45709E: std::_Vector_base<Cell, std::allocator<Cell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x454EAE: std::_Vector_base<Cell, std::allocator<Cell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x451752: std::_Vector_base<Cell, std::allocator<Cell> >::_Vector_base(unsigned long, std::allocator<Cell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44E7B7: std::vector<Cell, std::allocator<Cell> >::vector(unsigned long, std::allocator<Cell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44B042: Life<Cell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44BF18: Life<Cell>::lifeSetup(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x43D16B: LifeFixture_test_103_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_103 (7 ms)
+[ RUN      ] LifeFixture.test_104
+==5787== Invalid read of size 8
+==5787==    at 0x44BB23: Life<Cell>::collectNeighboors(int, int) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44BFDB: Life<Cell>::runTurn() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x43D975: LifeFixture_test_104_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480CC4: testing::TestCase::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480F3C: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48121D: testing::UnitTest::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x40508F: main (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==  Address 0x5d3b428 is 0 bytes after a block of size 8 alloc'd
+==5787==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5787==    by 0x458979: __gnu_cxx::new_allocator<Cell>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x45709E: std::_Vector_base<Cell, std::allocator<Cell> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x454EAE: std::_Vector_base<Cell, std::allocator<Cell> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x451752: std::_Vector_base<Cell, std::allocator<Cell> >::_Vector_base(unsigned long, std::allocator<Cell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44E7B7: std::vector<Cell, std::allocator<Cell> >::vector(unsigned long, std::allocator<Cell> const&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44B042: Life<Cell>::readInput(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x44BF18: Life<Cell>::lifeSetup(std::istream&) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x43D929: LifeFixture_test_104_Test::TestBody() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x48E112: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480B2C: testing::Test::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787==    by 0x480BC3: testing::TestInfo::Run() (in /v/filer4b/v38q001/said11/Documents/oop/lifeForked/life-Said-Eric/TestLife)
+==5787== 
+[       OK ] LifeFixture.test_104 (4 ms)
+[----------] 104 tests from LifeFixture (733 ms total)
+
+[----------] Global test environment tear-down
+[==========] 104 tests from 1 test case ran. (761 ms total)
+[  PASSED  ] 104 tests.
+==5787== 
+==5787== HEAP SUMMARY:
+==5787==     in use at exit: 3,632 bytes in 227 blocks
+==5787==   total heap usage: 6,310 allocs, 6,083 frees, 641,710 bytes allocated
+==5787== 
+==5787== LEAK SUMMARY:
+==5787==    definitely lost: 3,632 bytes in 227 blocks
+==5787==    indirectly lost: 0 bytes in 0 blocks
+==5787==      possibly lost: 0 bytes in 0 blocks
+==5787==    still reachable: 0 bytes in 0 blocks
+==5787==         suppressed: 0 bytes in 0 blocks
+==5787== Rerun with --leak-check=full to see details of leaked memory
+==5787== 
+==5787== For counts of detected and suppressed errors, rerun with: -v
+==5787== ERROR SUMMARY: 2109 errors from 18 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:93.78% of 193
+Branches executed:98.32% of 358
+Taken at least once:77.37% of 358
+Calls executed:88.30% of 393
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 1172
+Branches executed:78.77% of 5126
+Taken at least once:39.56% of 5126
+Calls executed:58.32% of 5317
+Creating 'TestLife.c++.gcov'
