@@ -1,0 +1,216 @@
+==24180== Memcheck, a memory error detector
+==24180== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==24180== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==24180== Command: ./TestLife
+==24180== 
+Running main() from gtest_main.cc
+[==========] Running 81 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 28 tests from ConwayCell
+[ RUN      ] ConwayCell.ccDefaultConstructor
+[       OK ] ConwayCell.ccDefaultConstructor (8 ms)
+[ RUN      ] ConwayCell.ccCharConstructor1
+[       OK ] ConwayCell.ccCharConstructor1 (3 ms)
+[ RUN      ] ConwayCell.ccCharConstructor2
+[       OK ] ConwayCell.ccCharConstructor2 (2 ms)
+[ RUN      ] ConwayCell.ccCharConstructor3
+[       OK ] ConwayCell.ccCharConstructor3 (1 ms)
+[ RUN      ] ConwayCell.ccCopyConstructor1
+[       OK ] ConwayCell.ccCopyConstructor1 (2 ms)
+[ RUN      ] ConwayCell.ccCopyConstructor2
+[       OK ] ConwayCell.ccCopyConstructor2 (2 ms)
+[ RUN      ] ConwayCell.ccCopyConstructor3
+[       OK ] ConwayCell.ccCopyConstructor3 (2 ms)
+[ RUN      ] ConwayCell.deadStaysDead
+[       OK ] ConwayCell.deadStaysDead (2 ms)
+[ RUN      ] ConwayCell.deadBecomesAlive
+[       OK ] ConwayCell.deadBecomesAlive (2 ms)
+[ RUN      ] ConwayCell.aliveStaysAlive
+[       OK ] ConwayCell.aliveStaysAlive (3 ms)
+[ RUN      ] ConwayCell.aliveBecomesDead
+[       OK ] ConwayCell.aliveBecomesDead (3 ms)
+[ RUN      ] ConwayCell.getNeighbor1
+[       OK ] ConwayCell.getNeighbor1 (2 ms)
+[ RUN      ] ConwayCell.getNeighbor2
+[       OK ] ConwayCell.getNeighbor2 (3 ms)
+[ RUN      ] ConwayCell.getNeighbor3
+[       OK ] ConwayCell.getNeighbor3 (2 ms)
+[ RUN      ] ConwayCell.getNeighbor4
+[       OK ] ConwayCell.getNeighbor4 (2 ms)
+[ RUN      ] ConwayCell.getNeighbor5
+[       OK ] ConwayCell.getNeighbor5 (2 ms)
+[ RUN      ] ConwayCell.getNeighbor6
+[       OK ] ConwayCell.getNeighbor6 (2 ms)
+[ RUN      ] ConwayCell.getNeighbor7
+[       OK ] ConwayCell.getNeighbor7 (2 ms)
+[ RUN      ] ConwayCell.getNeighbor8
+[       OK ] ConwayCell.getNeighbor8 (2 ms)
+[ RUN      ] ConwayCell.equalsEqualsOperator1
+[       OK ] ConwayCell.equalsEqualsOperator1 (2 ms)
+[ RUN      ] ConwayCell.equalsEqualsOperator2
+[       OK ] ConwayCell.equalsEqualsOperator2 (2 ms)
+[ RUN      ] ConwayCell.equalsEqualsOperator3
+[       OK ] ConwayCell.equalsEqualsOperator3 (2 ms)
+[ RUN      ] ConwayCell.clone1
+[       OK ] ConwayCell.clone1 (2 ms)
+[ RUN      ] ConwayCell.clone2
+[       OK ] ConwayCell.clone2 (2 ms)
+[ RUN      ] ConwayCell.clone3
+[       OK ] ConwayCell.clone3 (2 ms)
+[ RUN      ] ConwayCell.assignmentOperator1
+[       OK ] ConwayCell.assignmentOperator1 (3 ms)
+[ RUN      ] ConwayCell.assignmentOperator2
+[       OK ] ConwayCell.assignmentOperator2 (3 ms)
+[ RUN      ] ConwayCell.assignmentOperator3
+[       OK ] ConwayCell.assignmentOperator3 (2 ms)
+[----------] 28 tests from ConwayCell (78 ms total)
+
+[----------] 27 tests from FredkinCell
+[ RUN      ] FredkinCell.fcDefaultConstructor
+[       OK ] FredkinCell.fcDefaultConstructor (3 ms)
+[ RUN      ] FredkinCell.fcCharConstructor1
+[       OK ] FredkinCell.fcCharConstructor1 (3 ms)
+[ RUN      ] FredkinCell.fcCharConstructor2
+[       OK ] FredkinCell.fcCharConstructor2 (3 ms)
+[ RUN      ] FredkinCell.fcCharConstructor3
+[       OK ] FredkinCell.fcCharConstructor3 (2 ms)
+[ RUN      ] FredkinCell.fcCopyConstructor1
+[       OK ] FredkinCell.fcCopyConstructor1 (3 ms)
+[ RUN      ] FredkinCell.fcCopyConstructor2
+[       OK ] FredkinCell.fcCopyConstructor2 (2 ms)
+[ RUN      ] FredkinCell.fcCopyConstructor3
+[       OK ] FredkinCell.fcCopyConstructor3 (3 ms)
+[ RUN      ] FredkinCell.NeedToChangeAge1
+[       OK ] FredkinCell.NeedToChangeAge1 (4 ms)
+[ RUN      ] FredkinCell.growAge2
+[       OK ] FredkinCell.growAge2 (3 ms)
+[ RUN      ] FredkinCell.dieComeBackAge3
+[       OK ] FredkinCell.dieComeBackAge3 (3 ms)
+[ RUN      ] FredkinCell.comeAliveAge4
+[       OK ] FredkinCell.comeAliveAge4 (3 ms)
+[ RUN      ] FredkinCell.overTenAge5
+[       OK ] FredkinCell.overTenAge5 (2 ms)
+[ RUN      ] FredkinCell.assignmentOperator1
+[       OK ] FredkinCell.assignmentOperator1 (3 ms)
+[ RUN      ] FredkinCell.assignmentOperator2
+[       OK ] FredkinCell.assignmentOperator2 (3 ms)
+[ RUN      ] FredkinCell.assignmentOperator3
+[       OK ] FredkinCell.assignmentOperator3 (3 ms)
+[ RUN      ] FredkinCell.getNeighbor1
+[       OK ] FredkinCell.getNeighbor1 (2 ms)
+[ RUN      ] FredkinCell.getNeighbor2
+[       OK ] FredkinCell.getNeighbor2 (2 ms)
+[ RUN      ] FredkinCell.getNeighbor3
+[       OK ] FredkinCell.getNeighbor3 (2 ms)
+[ RUN      ] FredkinCell.getNeighbor4
+[       OK ] FredkinCell.getNeighbor4 (2 ms)
+[ RUN      ] FredkinCell.getNeighbor5
+[       OK ] FredkinCell.getNeighbor5 (2 ms)
+[ RUN      ] FredkinCell.getNeighbor6
+[       OK ] FredkinCell.getNeighbor6 (2 ms)
+[ RUN      ] FredkinCell.equalsEqualsOperator1
+[       OK ] FredkinCell.equalsEqualsOperator1 (2 ms)
+[ RUN      ] FredkinCell.equalsEqualsOperator2
+[       OK ] FredkinCell.equalsEqualsOperator2 (2 ms)
+[ RUN      ] FredkinCell.equalsEqualsOperator3
+[       OK ] FredkinCell.equalsEqualsOperator3 (2 ms)
+[ RUN      ] FredkinCell.clone1
+[       OK ] FredkinCell.clone1 (3 ms)
+[ RUN      ] FredkinCell.clone2
+[       OK ] FredkinCell.clone2 (2 ms)
+[ RUN      ] FredkinCell.clone3
+[       OK ] FredkinCell.clone3 (3 ms)
+[----------] 27 tests from FredkinCell (74 ms total)
+
+[----------] 10 tests from Cell
+[ RUN      ] Cell.defaultConstructor1
+[       OK ] Cell.defaultConstructor1 (2 ms)
+[ RUN      ] Cell.fredkinCellConstructor1
+[       OK ] Cell.fredkinCellConstructor1 (1 ms)
+[ RUN      ] Cell.fredkinCellConstructor2
+[       OK ] Cell.fredkinCellConstructor2 (2 ms)
+[ RUN      ] Cell.conwayCellConstructor1
+[       OK ] Cell.conwayCellConstructor1 (2 ms)
+[ RUN      ] Cell.conwayCellConstructor2
+[       OK ] Cell.conwayCellConstructor2 (3 ms)
+[ RUN      ] Cell.assignmentOperator1
+[       OK ] Cell.assignmentOperator1 (2 ms)
+[ RUN      ] Cell.isAlive1
+[       OK ] Cell.isAlive1 (3 ms)
+[ RUN      ] Cell.isAlive2
+[       OK ] Cell.isAlive2 (2 ms)
+[ RUN      ] Cell.isAlive3
+[       OK ] Cell.isAlive3 (2 ms)
+[ RUN      ] Cell.isAlive4
+[       OK ] Cell.isAlive4 (2 ms)
+[----------] 10 tests from Cell (22 ms total)
+
+[----------] 16 tests from Life
+[ RUN      ] Life.constructorFC
+[       OK ] Life.constructorFC (49 ms)
+[ RUN      ] Life.constructorCC
+[       OK ] Life.constructorCC (24 ms)
+[ RUN      ] Life.constructorFC2
+[       OK ] Life.constructorFC2 (4 ms)
+[ RUN      ] Life.addCellCC
+[       OK ] Life.addCellCC (4 ms)
+[ RUN      ] Life.addCellFC
+[       OK ] Life.addCellFC (4 ms)
+[ RUN      ] Life.addCellCell
+[       OK ] Life.addCellCell (27 ms)
+[ RUN      ] Life.updateNCC
+[       OK ] Life.updateNCC (16 ms)
+[ RUN      ] Life.updateNFC
+[       OK ] Life.updateNFC (15 ms)
+[ RUN      ] Life.GetNeighborsCC
+[       OK ] Life.GetNeighborsCC (4 ms)
+[ RUN      ] Life.GetNeighborsFC
+[       OK ] Life.GetNeighborsFC (3 ms)
+[ RUN      ] Life.printNeighborsCC
+[       OK ] Life.printNeighborsCC (4 ms)
+[ RUN      ] Life.printNeighborsFC
+[       OK ] Life.printNeighborsFC (5 ms)
+[ RUN      ] Life.nextTurnCC
+[       OK ] Life.nextTurnCC (6 ms)
+[ RUN      ] Life.nextTurnFC
+[       OK ] Life.nextTurnFC (7 ms)
+[ RUN      ] Life.SimulateCC
+[       OK ] Life.SimulateCC (8 ms)
+[ RUN      ] Life.SimulateFC
+[       OK ] Life.SimulateFC (6 ms)
+[----------] 16 tests from Life (189 ms total)
+
+[----------] Global test environment tear-down
+[==========] 81 tests from 4 test cases ran. (394 ms total)
+[  PASSED  ] 81 tests.
+==24180== 
+==24180== HEAP SUMMARY:
+==24180==     in use at exit: 0 bytes in 0 blocks
+==24180==   total heap usage: 1,751 allocs, 1,751 frees, 197,533 bytes allocated
+==24180== 
+==24180== All heap blocks were freed -- no leaks are possible
+==24180== 
+==24180== For counts of detected and suppressed errors, rerun with: -v
+==24180== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:98.68% of 152
+Branches executed:100.00% of 166
+Taken at least once:86.75% of 166
+Calls executed:90.24% of 246
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 495
+Branches executed:56.68% of 2290
+Taken at least once:28.47% of 2290
+Calls executed:48.23% of 3073
+Creating 'TestLife.c++.gcov'
+.gitignore found
+Life.h found
+Life.log found
+html found
+makefile found
+RunLife.c++ found
+RunLife.out found
+TestLife.c++ found
+TestLife.out found
+success
