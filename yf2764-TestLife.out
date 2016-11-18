@@ -1,0 +1,98 @@
+==10637== Memcheck, a memory error detector
+==10637== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==10637== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==10637== Command: ./TestLife
+==10637==
+Running main() from gtest_main.cc
+[==========] Running 24 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 13 tests from LifeFixture
+[ RUN      ] LifeFixture.getPair
+[       OK ] LifeFixture.getPair (26 ms)
+[ RUN      ] LifeFixture.getPair1
+[       OK ] LifeFixture.getPair1 (2 ms)
+[ RUN      ] LifeFixture.getPair2
+[       OK ] LifeFixture.getPair2 (3 ms)
+[ RUN      ] LifeFixture.getIndex
+[       OK ] LifeFixture.getIndex (3 ms)
+[ RUN      ] LifeFixture.getIndex1
+[       OK ] LifeFixture.getIndex1 (2 ms)
+[ RUN      ] LifeFixture.getIndex2
+[       OK ] LifeFixture.getIndex2 (2 ms)
+[ RUN      ] LifeFixture.addCell
+[       OK ] LifeFixture.addCell (18 ms)
+[ RUN      ] LifeFixture.addCell1
+[       OK ] LifeFixture.addCell1 (7 ms)
+[ RUN      ] LifeFixture.addCell2
+[       OK ] LifeFixture.addCell2 (3 ms)
+[ RUN      ] LifeFixture.goNeighborCount
+[       OK ] LifeFixture.goNeighborCount (20 ms)
+[ RUN      ] LifeFixture.goNeighborCount1
+[       OK ] LifeFixture.goNeighborCount1 (16 ms)
+[ RUN      ] LifeFixture.go
+[       OK ] LifeFixture.go (6 ms)
+[ RUN      ] LifeFixture.go1
+[       OK ] LifeFixture.go1 (7 ms)
+[----------] 13 tests from LifeFixture (123 ms total)
+
+[----------] 4 tests from ConwayCellFixture
+[ RUN      ] ConwayCellFixture.go
+[       OK ] ConwayCellFixture.go (2 ms)
+[ RUN      ] ConwayCellFixture.go1
+[       OK ] ConwayCellFixture.go1 (3 ms)
+[ RUN      ] ConwayCellFixture.go2
+[       OK ] ConwayCellFixture.go2 (2 ms)
+[ RUN      ] ConwayCellFixture.clone
+[       OK ] ConwayCellFixture.clone (2 ms)
+[----------] 4 tests from ConwayCellFixture (9 ms total)
+
+[----------] 5 tests from FredkinCellFixture
+[ RUN      ] FredkinCellFixture.go
+[       OK ] FredkinCellFixture.go (2 ms)
+[ RUN      ] FredkinCellFixture.go1
+[       OK ] FredkinCellFixture.go1 (3 ms)
+[ RUN      ] FredkinCellFixture.go2
+[       OK ] FredkinCellFixture.go2 (2 ms)
+[ RUN      ] FredkinCellFixture.go3
+[       OK ] FredkinCellFixture.go3 (2 ms)
+[ RUN      ] FredkinCellFixture.clone1
+[       OK ] FredkinCellFixture.clone1 (3 ms)
+[----------] 5 tests from FredkinCellFixture (12 ms total)
+
+[----------] 2 tests from CellFixture
+[ RUN      ] CellFixture.equal
+[       OK ] CellFixture.equal (3 ms)
+[ RUN      ] CellFixture.copy
+[       OK ] CellFixture.copy (3 ms)
+[----------] 2 tests from CellFixture (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 24 tests from 4 test cases ran. (179 ms total)
+[  PASSED  ] 24 tests.
+==10637==
+==10637== HEAP SUMMARY:
+==10637==     in use at exit: 104 bytes in 6 blocks
+==10637==   total heap usage: 724 allocs, 718 frees, 91,938 bytes allocated
+==10637==
+==10637== LEAK SUMMARY:
+==10637==    definitely lost: 104 bytes in 6 blocks
+==10637==    indirectly lost: 0 bytes in 0 blocks
+==10637==      possibly lost: 0 bytes in 0 blocks
+==10637==    still reachable: 0 bytes in 0 blocks
+==10637==         suppressed: 0 bytes in 0 blocks
+==10637== Rerun with --leak-check=full to see details of leaked memory
+==10637==
+==10637== For counts of detected and suppressed errors, rerun with: -v
+==10637== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:82.64% of 121
+Branches executed:88.37% of 86
+Taken at least once:72.09% of 86
+Calls executed:84.85% of 99
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 135
+Branches executed:60.98% of 738
+Taken at least once:30.49% of 738
+Calls executed:50.20% of 980
+Creating 'TestLife.c++.gcov'
