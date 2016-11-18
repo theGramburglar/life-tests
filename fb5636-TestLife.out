@@ -1,0 +1,146 @@
+==37== Memcheck, a memory error detector
+==37== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==37== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==37== Command: ./TestLife
+==37== 
+Running main() from gtest_main.cc
+[==========] Running 48 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 16 tests from ConwayFixture
+[ RUN      ] ConwayFixture.default_constructor
+[       OK ] ConwayFixture.default_constructor (38 ms)
+[ RUN      ] ConwayFixture.string_constructor_1
+[       OK ] ConwayFixture.string_constructor_1 (4 ms)
+[ RUN      ] ConwayFixture.string_constructor_2
+[       OK ] ConwayFixture.string_constructor_2 (3 ms)
+[ RUN      ] ConwayFixture.clone_1
+[       OK ] ConwayFixture.clone_1 (19 ms)
+[ RUN      ] ConwayFixture.isAlive_1
+[       OK ] ConwayFixture.isAlive_1 (3 ms)
+[ RUN      ] ConwayFixture.isAlive_2
+[       OK ] ConwayFixture.isAlive_2 (3 ms)
+[ RUN      ] ConwayFixture.execute_1
+[       OK ] ConwayFixture.execute_1 (7 ms)
+[ RUN      ] ConwayFixture.execute_2
+[       OK ] ConwayFixture.execute_2 (4 ms)
+[ RUN      ] ConwayFixture.execute_3
+[       OK ] ConwayFixture.execute_3 (4 ms)
+[ RUN      ] ConwayFixture.execute_4
+[       OK ] ConwayFixture.execute_4 (5 ms)
+[ RUN      ] ConwayFixture.die_1
+[       OK ] ConwayFixture.die_1 (7 ms)
+[ RUN      ] ConwayFixture.die_2
+[       OK ] ConwayFixture.die_2 (6 ms)
+[ RUN      ] ConwayFixture.birth_1
+[       OK ] ConwayFixture.birth_1 (5 ms)
+[ RUN      ] ConwayFixture.birth_2
+[       OK ] ConwayFixture.birth_2 (8 ms)
+[ RUN      ] ConwayFixture.neighborhood_1
+[       OK ] ConwayFixture.neighborhood_1 (13 ms)
+[ RUN      ] ConwayFixture.neighborhood_2
+[       OK ] ConwayFixture.neighborhood_2 (5 ms)
+[----------] 16 tests from ConwayFixture (179 ms total)
+
+[----------] 19 tests from FredkinFixture
+[ RUN      ] FredkinFixture.default_constructor
+[       OK ] FredkinFixture.default_constructor (7 ms)
+[ RUN      ] FredkinFixture.string_constructor_1
+[       OK ] FredkinFixture.string_constructor_1 (7 ms)
+[ RUN      ] FredkinFixture.string_constructor_2
+[       OK ] FredkinFixture.string_constructor_2 (7 ms)
+[ RUN      ] FredkinFixture.clone_1
+[       OK ] FredkinFixture.clone_1 (8 ms)
+[ RUN      ] FredkinFixture.isAlive_1
+[       OK ] FredkinFixture.isAlive_1 (5 ms)
+[ RUN      ] FredkinFixture.isAlive_2
+[       OK ] FredkinFixture.isAlive_2 (4 ms)
+[ RUN      ] FredkinFixture.execute_1
+[       OK ] FredkinFixture.execute_1 (18 ms)
+[ RUN      ] FredkinFixture.execute_2
+[       OK ] FredkinFixture.execute_2 (4 ms)
+[ RUN      ] FredkinFixture.execute_3
+[       OK ] FredkinFixture.execute_3 (4 ms)
+[ RUN      ] FredkinFixture.execute_4
+[       OK ] FredkinFixture.execute_4 (4 ms)
+[ RUN      ] FredkinFixture.execute_5
+[       OK ] FredkinFixture.execute_5 (4 ms)
+[ RUN      ] FredkinFixture.die_1
+[       OK ] FredkinFixture.die_1 (3 ms)
+[ RUN      ] FredkinFixture.die_2
+[       OK ] FredkinFixture.die_2 (3 ms)
+[ RUN      ] FredkinFixture.birth_1
+[       OK ] FredkinFixture.birth_1 (4 ms)
+[ RUN      ] FredkinFixture.birth_2
+[       OK ] FredkinFixture.birth_2 (3 ms)
+[ RUN      ] FredkinFixture.survive_1
+[       OK ] FredkinFixture.survive_1 (4 ms)
+[ RUN      ] FredkinFixture.evolve_1
+[       OK ] FredkinFixture.evolve_1 (6 ms)
+[ RUN      ] FredkinFixture.neighborhood_1
+[       OK ] FredkinFixture.neighborhood_1 (6 ms)
+[ RUN      ] FredkinFixture.neighborhood_2
+[       OK ] FredkinFixture.neighborhood_2 (4 ms)
+[----------] 19 tests from FredkinFixture (132 ms total)
+
+[----------] 9 tests from CellFixture
+[ RUN      ] CellFixture.string_constructor_1
+[       OK ] CellFixture.string_constructor_1 (6 ms)
+[ RUN      ] CellFixture.string_constructor_2
+[       OK ] CellFixture.string_constructor_2 (6 ms)
+[ RUN      ] CellFixture.execute_1
+[       OK ] CellFixture.execute_1 (5 ms)
+[ RUN      ] CellFixture.execute_2
+[       OK ] CellFixture.execute_2 (4 ms)
+[ RUN      ] CellFixture.isAlive_1
+[       OK ] CellFixture.isAlive_1 (4 ms)
+[ RUN      ] CellFixture.ifAvailable_1
+[       OK ] CellFixture.ifAvailable_1 (5 ms)
+[ RUN      ] CellFixture.ifAvailable_2
+[       OK ] CellFixture.ifAvailable_2 (4 ms)
+[ RUN      ] CellFixture.neighborhood_1
+[       OK ] CellFixture.neighborhood_1 (4 ms)
+[ RUN      ] CellFixture.neighborhood_2
+[       OK ] CellFixture.neighborhood_2 (5 ms)
+[----------] 9 tests from CellFixture (59 ms total)
+
+[----------] 4 tests from LifeFixture
+[ RUN      ] LifeFixture.constructor
+[       OK ] LifeFixture.constructor (25 ms)
+[ RUN      ] LifeFixture.initialize_1
+[       OK ] LifeFixture.initialize_1 (49 ms)
+[ RUN      ] LifeFixture.initialize_2
+[       OK ] LifeFixture.initialize_2 (6 ms)
+[ RUN      ] LifeFixture.execute_1
+[       OK ] LifeFixture.execute_1 (40 ms)
+[----------] 4 tests from LifeFixture (128 ms total)
+
+[----------] Global test environment tear-down
+[==========] 48 tests from 4 test cases ran. (586 ms total)
+[  PASSED  ] 48 tests.
+==37== 
+==37== HEAP SUMMARY:
+==37==     in use at exit: 72,704 bytes in 1 blocks
+==37==   total heap usage: 701 allocs, 700 frees, 198,260 bytes allocated
+==37== 
+==37== LEAK SUMMARY:
+==37==    definitely lost: 0 bytes in 0 blocks
+==37==    indirectly lost: 0 bytes in 0 blocks
+==37==      possibly lost: 0 bytes in 0 blocks
+==37==    still reachable: 72,704 bytes in 1 blocks
+==37==         suppressed: 0 bytes in 0 blocks
+==37== Rerun with --leak-check=full to see details of leaked memory
+==37== 
+==37== For counts of detected and suppressed errors, rerun with: -v
+==37== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:93.29% of 149
+Branches executed:98.96% of 193
+Taken at least once:67.36% of 193
+Calls executed:80.00% of 245
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 194
+Branches executed:68.49% of 1244
+Taken at least once:34.24% of 1244
+Calls executed:58.51% of 1540
+Creating 'TestLife.c++.gcov'
