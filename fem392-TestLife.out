@@ -1,0 +1,341 @@
+==6216== Memcheck, a memory error detector
+==6216== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==6216== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==6216== Command: ./TestLife
+==6216== 
+Running main() from gtest_main.cc
+[==========] Running 67 tests from 15 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from ConwayCell_const
+[ RUN      ] ConwayCell_const.test_1
+[       OK ] ConwayCell_const.test_1 (9 ms)
+[ RUN      ] ConwayCell_const.test_2
+[       OK ] ConwayCell_const.test_2 (2 ms)
+[ RUN      ] ConwayCell_const.test_3
+[       OK ] ConwayCell_const.test_3 (2 ms)
+[ RUN      ] ConwayCell_const.test_4
+[       OK ] ConwayCell_const.test_4 (2 ms)
+[----------] 4 tests from ConwayCell_const (21 ms total)
+
+[----------] 4 tests from FredkinCell_const
+[ RUN      ] FredkinCell_const.test_1
+[       OK ] FredkinCell_const.test_1 (3 ms)
+[ RUN      ] FredkinCell_const.test_2
+[       OK ] FredkinCell_const.test_2 (2 ms)
+[ RUN      ] FredkinCell_const.test_3
+[       OK ] FredkinCell_const.test_3 (2 ms)
+[ RUN      ] FredkinCell_const.test_4
+[       OK ] FredkinCell_const.test_4 (2 ms)
+[----------] 4 tests from FredkinCell_const (9 ms total)
+
+[----------] 4 tests from AbstractCell_const
+[ RUN      ] AbstractCell_const.test_1
+[       OK ] AbstractCell_const.test_1 (3 ms)
+[ RUN      ] AbstractCell_const.test_2
+[       OK ] AbstractCell_const.test_2 (2 ms)
+[ RUN      ] AbstractCell_const.test_3
+[       OK ] AbstractCell_const.test_3 (2 ms)
+[ RUN      ] AbstractCell_const.test_4
+[       OK ] AbstractCell_const.test_4 (3 ms)
+[----------] 4 tests from AbstractCell_const (11 ms total)
+
+[----------] 3 tests from ConwayCell_print
+[ RUN      ] ConwayCell_print.test_1
+[       OK ] ConwayCell_print.test_1 (7 ms)
+[ RUN      ] ConwayCell_print.test_2
+[       OK ] ConwayCell_print.test_2 (3 ms)
+[ RUN      ] ConwayCell_print.test_3
+[       OK ] ConwayCell_print.test_3 (3 ms)
+[----------] 3 tests from ConwayCell_print (13 ms total)
+
+[----------] 3 tests from FredkinCell_print
+[ RUN      ] FredkinCell_print.test_1
+[       OK ] FredkinCell_print.test_1 (3 ms)
+[ RUN      ] FredkinCell_print.test_2
+[       OK ] FredkinCell_print.test_2 (3 ms)
+[ RUN      ] FredkinCell_print.test_3
+[       OK ] FredkinCell_print.test_3 (3 ms)
+[----------] 3 tests from FredkinCell_print (9 ms total)
+
+[----------] 4 tests from AbstractCell_print
+[ RUN      ] AbstractCell_print.test_1
+[       OK ] AbstractCell_print.test_1 (3 ms)
+[ RUN      ] AbstractCell_print.test_2
+[       OK ] AbstractCell_print.test_2 (3 ms)
+[ RUN      ] AbstractCell_print.test_3
+[       OK ] AbstractCell_print.test_3 (3 ms)
+[ RUN      ] AbstractCell_print.test_4
+[       OK ] AbstractCell_print.test_4 (4 ms)
+[----------] 4 tests from AbstractCell_print (13 ms total)
+
+[----------] 4 tests from ConwayCell_change
+[ RUN      ] ConwayCell_change.test_1
+[       OK ] ConwayCell_change.test_1 (26 ms)
+[ RUN      ] ConwayCell_change.test_2
+[       OK ] ConwayCell_change.test_2 (3 ms)
+[ RUN      ] ConwayCell_change.test_3
+[       OK ] ConwayCell_change.test_3 (4 ms)
+[ RUN      ] ConwayCell_change.test_4
+[       OK ] ConwayCell_change.test_4 (3 ms)
+[----------] 4 tests from ConwayCell_change (37 ms total)
+
+[----------] 5 tests from FredkinCell_change
+[ RUN      ] FredkinCell_change.test_1
+[       OK ] FredkinCell_change.test_1 (4 ms)
+[ RUN      ] FredkinCell_change.test_2
+[       OK ] FredkinCell_change.test_2 (3 ms)
+[ RUN      ] FredkinCell_change.test_3
+[       OK ] FredkinCell_change.test_3 (5 ms)
+[ RUN      ] FredkinCell_change.test_4
+[       OK ] FredkinCell_change.test_4 (4 ms)
+[ RUN      ] FredkinCell_change.test_5
+[       OK ] FredkinCell_change.test_5 (4 ms)
+[----------] 5 tests from FredkinCell_change (21 ms total)
+
+[----------] 4 tests from AbstractCell_change
+[ RUN      ] AbstractCell_change.test_1
+[       OK ] AbstractCell_change.test_1 (4 ms)
+[ RUN      ] AbstractCell_change.test_2
+[       OK ] AbstractCell_change.test_2 (4 ms)
+[ RUN      ] AbstractCell_change.test_3
+[       OK ] AbstractCell_change.test_3 (3 ms)
+[ RUN      ] AbstractCell_change.test_4
+[       OK ] AbstractCell_change.test_4 (4 ms)
+[----------] 4 tests from AbstractCell_change (16 ms total)
+
+[----------] 4 tests from ConwayCell_place
+[ RUN      ] ConwayCell_place.test_1
+[       OK ] ConwayCell_place.test_1 (6 ms)
+[ RUN      ] ConwayCell_place.test_2
+[       OK ] ConwayCell_place.test_2 (3 ms)
+[ RUN      ] ConwayCell_place.test_3
+[       OK ] ConwayCell_place.test_3 (3 ms)
+[ RUN      ] ConwayCell_place.test_4
+[       OK ] ConwayCell_place.test_4 (4 ms)
+[----------] 4 tests from ConwayCell_place (17 ms total)
+
+[----------] 4 tests from FredkinCell_place
+[ RUN      ] FredkinCell_place.test_1
+[       OK ] FredkinCell_place.test_1 (4 ms)
+[ RUN      ] FredkinCell_place.test_2
+[       OK ] FredkinCell_place.test_2 (3 ms)
+[ RUN      ] FredkinCell_place.test_3
+[       OK ] FredkinCell_place.test_3 (3 ms)
+[ RUN      ] FredkinCell_place.test_4
+[       OK ] FredkinCell_place.test_4 (4 ms)
+[----------] 4 tests from FredkinCell_place (15 ms total)
+
+[----------] 4 tests from ConwayCell_clone
+[ RUN      ] ConwayCell_clone.test_1
+[       OK ] ConwayCell_clone.test_1 (6 ms)
+[ RUN      ] ConwayCell_clone.test_2
+[       OK ] ConwayCell_clone.test_2 (4 ms)
+[ RUN      ] ConwayCell_clone.test_3
+[       OK ] ConwayCell_clone.test_3 (4 ms)
+[ RUN      ] ConwayCell_clone.test_4
+[       OK ] ConwayCell_clone.test_4 (4 ms)
+[----------] 4 tests from ConwayCell_clone (18 ms total)
+
+[----------] 4 tests from FredkinCell_clone
+[ RUN      ] FredkinCell_clone.test_1
+[       OK ] FredkinCell_clone.test_1 (4 ms)
+[ RUN      ] FredkinCell_clone.test_2
+[       OK ] FredkinCell_clone.test_2 (4 ms)
+[ RUN      ] FredkinCell_clone.test_3
+[       OK ] FredkinCell_clone.test_3 (4 ms)
+[ RUN      ] FredkinCell_clone.test_4
+[       OK ] FredkinCell_clone.test_4 (4 ms)
+[----------] 4 tests from FredkinCell_clone (17 ms total)
+
+[----------] 12 tests from Life_simulator
+[ RUN      ] Life_simulator.test_1
+
+Generation = 0, Population = 0.
+.............
+.............
+
+[       OK ] Life_simulator.test_1 (79 ms)
+[ RUN      ] Life_simulator.test_2
+
+Generation = 0, Population = 0.
+..........
+
+
+Generation = 1, Population = 0.
+..........
+
+[       OK ] Life_simulator.test_2 (5 ms)
+[ RUN      ] Life_simulator.test_3
+
+Generation = 0, Population = 0.
+.............
+.............
+
+
+Generation = 4, Population = 0.
+.............
+.............
+
+[       OK ] Life_simulator.test_3 (8 ms)
+[ RUN      ] Life_simulator.test_4
+
+Generation = 0, Population = 9.
+.....*.*..***
+.....***..*..
+
+
+Generation = 4, Population = 4.
+..........**.
+..........**.
+
+[       OK ] Life_simulator.test_4 (10 ms)
+[ RUN      ] Life_simulator.test_5
+
+Generation = 0, Population = 0.
+--------------------
+--------------------
+
+[       OK ] Life_simulator.test_5 (34 ms)
+[ RUN      ] Life_simulator.test_6
+
+Generation = 0, Population = 0.
+----------
+
+[       OK ] Life_simulator.test_6 (4 ms)
+[ RUN      ] Life_simulator.test_7
+
+Generation = 0, Population = 10.
+-----0000---0
+----0000----0
+
+
+Generation = 4, Population = 20.
+-0002111-3-0-
+01211111-2-11
+
+[       OK ] Life_simulator.test_7 (35 ms)
+[ RUN      ] Life_simulator.test_8
+
+Generation = 0, Population = 5.
+-----
+--0--
+-000-
+--0--
+-----
+
+
+Generation = 4, Population = 16.
+-232-
+2-4-2
+34-43
+2-4-2
+-232-
+
+[       OK ] Life_simulator.test_8 (8 ms)
+[ RUN      ] Life_simulator.test_9
+
+Generation = 0, Population = 0.
+-------------
+-------------
+
+
+Generation = 4, Population = 0.
+-------------
+-------------
+
+[       OK ] Life_simulator.test_9 (70 ms)
+[ RUN      ] Life_simulator.test_10
+
+Generation = 0, Population = 0.
+-------------
+-------------
+
+
+Generation = 4, Population = 0.
+-------------
+-------------
+
+[       OK ] Life_simulator.test_10 (11 ms)
+[ RUN      ] Life_simulator.test_11
+
+Generation = 0, Population = 0.
+--------------------
+--------------------
+
+[       OK ] Life_simulator.test_11 (5 ms)
+[ RUN      ] Life_simulator.test_12
+
+Generation = 0, Population = 0.
+----------
+
+[       OK ] Life_simulator.test_12 (4 ms)
+[----------] 12 tests from Life_simulator (274 ms total)
+
+[----------] 4 tests from Life_generation
+[ RUN      ] Life_generation.test_1
+
+Generation = 0, Population = 0.
+.............
+.............
+
+[       OK ] Life_generation.test_1 (7 ms)
+[ RUN      ] Life_generation.test_2
+
+Generation = 0, Population = 0.
+..........
+
+
+Generation = 1, Population = 0.
+..........
+
+[       OK ] Life_generation.test_2 (5 ms)
+[ RUN      ] Life_generation.test_3
+
+Generation = 0, Population = 0.
+.............
+.............
+
+
+Generation = 4, Population = 0.
+.............
+.............
+
+[       OK ] Life_generation.test_3 (10 ms)
+[ RUN      ] Life_generation.test_4
+
+Generation = 0, Population = 9.
+.....*.*..***
+.....***..*..
+
+
+Generation = 4, Population = 4.
+..........**.
+..........**.
+
+[       OK ] Life_generation.test_4 (9 ms)
+[----------] 4 tests from Life_generation (32 ms total)
+
+[----------] Global test environment tear-down
+[==========] 67 tests from 15 test cases ran. (555 ms total)
+[  PASSED  ] 67 tests.
+==6216== 
+==6216== HEAP SUMMARY:
+==6216==     in use at exit: 0 bytes in 0 blocks
+==6216==   total heap usage: 3,677 allocs, 3,677 frees, 332,390 bytes allocated
+==6216== 
+==6216== All heap blocks were freed -- no leaks are possible
+==6216== 
+==6216== For counts of detected and suppressed errors, rerun with: -v
+==6216== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:95.57% of 158
+Branches executed:96.24% of 426
+Taken at least once:63.85% of 426
+Calls executed:89.18% of 388
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 627
+Branches executed:79.21% of 2578
+Taken at least once:40.38% of 2578
+Calls executed:61.74% of 2870
+Creating 'TestLife.c++.gcov'
