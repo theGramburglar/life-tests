@@ -1,0 +1,98 @@
+==17782== Memcheck, a memory error detector
+==17782== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==17782== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==17782== Command: ./TestLife
+==17782== 
+Running main() from gtest_main.cc
+[==========] Running 27 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 6 tests from LifeFixture
+[ RUN      ] LifeFixture.input_stream_tests
+[       OK ] LifeFixture.input_stream_tests (103 ms)
+[ RUN      ] LifeFixture.output_stream_tests
+[       OK ] LifeFixture.output_stream_tests (10 ms)
+[ RUN      ] LifeFixture.default_constructor_tests
+[       OK ] LifeFixture.default_constructor_tests (6 ms)
+[ RUN      ] LifeFixture.double_constructor_tests
+[       OK ] LifeFixture.double_constructor_tests (12 ms)
+[ RUN      ] LifeFixture.run_generation_tests
+[       OK ] LifeFixture.run_generation_tests (117 ms)
+[ RUN      ] LifeFixture.update_neighbor_world_tests
+[       OK ] LifeFixture.update_neighbor_world_tests (23 ms)
+[----------] 6 tests from LifeFixture (277 ms total)
+
+[----------] 6 tests from ConwayCellFixture
+[ RUN      ] ConwayCellFixture.default_constructor_tests
+[       OK ] ConwayCellFixture.default_constructor_tests (2 ms)
+[ RUN      ] ConwayCellFixture.constructor_tests
+[       OK ] ConwayCellFixture.constructor_tests (4 ms)
+[ RUN      ] ConwayCellFixture.copy_assignment_tests
+[       OK ] ConwayCellFixture.copy_assignment_tests (6 ms)
+[ RUN      ] ConwayCellFixture.determine_life_tests
+[       OK ] ConwayCellFixture.determine_life_tests (5 ms)
+[ RUN      ] ConwayCellFixture.check_neighbor_tests
+[       OK ] ConwayCellFixture.check_neighbor_tests (5 ms)
+[ RUN      ] ConwayCellFixture.clone_tests
+[       OK ] ConwayCellFixture.clone_tests (6 ms)
+[----------] 6 tests from ConwayCellFixture (28 ms total)
+
+[----------] 7 tests from FredkinCellFixture
+[ RUN      ] FredkinCellFixture.default_constructor_tests
+[       OK ] FredkinCellFixture.default_constructor_tests (3 ms)
+[ RUN      ] FredkinCellFixture.single_constructor_tests
+[       OK ] FredkinCellFixture.single_constructor_tests (6 ms)
+[ RUN      ] FredkinCellFixture.copy_assignment_tests
+[       OK ] FredkinCellFixture.copy_assignment_tests (6 ms)
+[ RUN      ] FredkinCellFixture.determine_life_status_tests
+[       OK ] FredkinCellFixture.determine_life_status_tests (8 ms)
+[ RUN      ] FredkinCellFixture.check_valid_neighbor_tests
+[       OK ] FredkinCellFixture.check_valid_neighbor_tests (7 ms)
+[ RUN      ] FredkinCellFixture.mutate_tests
+[       OK ] FredkinCellFixture.mutate_tests (5 ms)
+[ RUN      ] FredkinCellFixture.clone_tests
+[       OK ] FredkinCellFixture.clone_tests (6 ms)
+[----------] 7 tests from FredkinCellFixture (42 ms total)
+
+[----------] 8 tests from CellFixture
+[ RUN      ] CellFixture.print_tests
+[       OK ] CellFixture.print_tests (11 ms)
+[ RUN      ] CellFixture.default_constructor_tests
+[       OK ] CellFixture.default_constructor_tests (2 ms)
+[ RUN      ] CellFixture.single_constructor_tests
+[       OK ] CellFixture.single_constructor_tests (6 ms)
+[ RUN      ] CellFixture.copy_constructor_tests
+[       OK ] CellFixture.copy_constructor_tests (10 ms)
+[ RUN      ] CellFixture.copy_assignment_tests
+[       OK ] CellFixture.copy_assignment_tests (11 ms)
+[ RUN      ] CellFixture.get_alive_tests
+[       OK ] CellFixture.get_alive_tests (5 ms)
+[ RUN      ] CellFixture.determine_life_status_tests
+[       OK ] CellFixture.determine_life_status_tests (7 ms)
+[ RUN      ] CellFixture.check_valid_neighbor
+[       OK ] CellFixture.check_valid_neighbor (12 ms)
+[----------] 8 tests from CellFixture (65 ms total)
+
+[----------] Global test environment tear-down
+[==========] 27 tests from 4 test cases ran. (441 ms total)
+[  PASSED  ] 27 tests.
+==17782== 
+==17782== HEAP SUMMARY:
+==17782==     in use at exit: 0 bytes in 0 blocks
+==17782==   total heap usage: 1,080 allocs, 1,080 frees, 112,191 bytes allocated
+==17782== 
+==17782== All heap blocks were freed -- no leaks are possible
+==17782== 
+==17782== For counts of detected and suppressed errors, rerun with: -v
+==17782== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:98.50% of 133
+Branches executed:99.17% of 242
+Taken at least once:76.45% of 242
+Calls executed:82.20% of 191
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 538
+Branches executed:53.06% of 4414
+Taken at least once:26.89% of 4414
+Calls executed:39.27% of 4171
+Creating 'TestLife.c++.gcov'
