@@ -1,0 +1,141 @@
+Running main() from gtest_main.cc
+[==========] Running 66 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 66 tests from LifeFixture
+[ RUN      ] LifeFixture.cc_assign1
+[       OK ] LifeFixture.cc_assign1 (0 ms)
+[ RUN      ] LifeFixture.cc_assign2
+[       OK ] LifeFixture.cc_assign2 (0 ms)
+[ RUN      ] LifeFixture.cc_assign3
+[       OK ] LifeFixture.cc_assign3 (0 ms)
+[ RUN      ] LifeFixture.fc_assign1
+[       OK ] LifeFixture.fc_assign1 (0 ms)
+[ RUN      ] LifeFixture.fc_assign2
+[       OK ] LifeFixture.fc_assign2 (0 ms)
+[ RUN      ] LifeFixture.fc_assign3
+[       OK ] LifeFixture.fc_assign3 (0 ms)
+[ RUN      ] LifeFixture.cc_output1
+[       OK ] LifeFixture.cc_output1 (0 ms)
+[ RUN      ] LifeFixture.cc_output2
+[       OK ] LifeFixture.cc_output2 (0 ms)
+[ RUN      ] LifeFixture.cc_output3
+[       OK ] LifeFixture.cc_output3 (0 ms)
+[ RUN      ] LifeFixture.fc_output1
+[       OK ] LifeFixture.fc_output1 (0 ms)
+[ RUN      ] LifeFixture.fc_output2
+[       OK ] LifeFixture.fc_output2 (0 ms)
+[ RUN      ] LifeFixture.fc_output3
+[       OK ] LifeFixture.fc_output3 (0 ms)
+[ RUN      ] LifeFixture.cc_alive1
+[       OK ] LifeFixture.cc_alive1 (0 ms)
+[ RUN      ] LifeFixture.cc_alive2
+[       OK ] LifeFixture.cc_alive2 (0 ms)
+[ RUN      ] LifeFixture.cc_alive3
+[       OK ] LifeFixture.cc_alive3 (0 ms)
+[ RUN      ] LifeFixture.fc_alive1
+[       OK ] LifeFixture.fc_alive1 (0 ms)
+[ RUN      ] LifeFixture.fc_alive2
+[       OK ] LifeFixture.fc_alive2 (0 ms)
+[ RUN      ] LifeFixture.fc_alive3
+[       OK ] LifeFixture.fc_alive3 (0 ms)
+[ RUN      ] LifeFixture.cc_live_neighbors_1
+[       OK ] LifeFixture.cc_live_neighbors_1 (0 ms)
+[ RUN      ] LifeFixture.cc_live_neighbors_2
+[       OK ] LifeFixture.cc_live_neighbors_2 (0 ms)
+[ RUN      ] LifeFixture.cc_live_neighbors_3
+[       OK ] LifeFixture.cc_live_neighbors_3 (0 ms)
+[ RUN      ] LifeFixture.fc_live_neighbors_1
+[       OK ] LifeFixture.fc_live_neighbors_1 (0 ms)
+[ RUN      ] LifeFixture.fc_live_neighbors_2
+[       OK ] LifeFixture.fc_live_neighbors_2 (0 ms)
+[ RUN      ] LifeFixture.fc_live_neighbors_3
+[       OK ] LifeFixture.fc_live_neighbors_3 (0 ms)
+[ RUN      ] LifeFixture.fc_live_neighbors_4
+[       OK ] LifeFixture.fc_live_neighbors_4 (0 ms)
+[ RUN      ] LifeFixture.fc_live_neighbors_5
+[       OK ] LifeFixture.fc_live_neighbors_5 (0 ms)
+[ RUN      ] LifeFixture.cc_evolve1
+[       OK ] LifeFixture.cc_evolve1 (0 ms)
+[ RUN      ] LifeFixture.cc_evolve2
+[       OK ] LifeFixture.cc_evolve2 (0 ms)
+[ RUN      ] LifeFixture.cc_evolve3
+[       OK ] LifeFixture.cc_evolve3 (1 ms)
+[ RUN      ] LifeFixture.cc_evolve4
+[       OK ] LifeFixture.cc_evolve4 (0 ms)
+[ RUN      ] LifeFixture.fc_evolve1
+[       OK ] LifeFixture.fc_evolve1 (0 ms)
+[ RUN      ] LifeFixture.fc_evolve2
+[       OK ] LifeFixture.fc_evolve2 (0 ms)
+[ RUN      ] LifeFixture.fc_evolve3
+[       OK ] LifeFixture.fc_evolve3 (0 ms)
+[ RUN      ] LifeFixture.fc_evolve4
+[       OK ] LifeFixture.fc_evolve4 (0 ms)
+[ RUN      ] LifeFixture.fc_evolve5
+[       OK ] LifeFixture.fc_evolve5 (0 ms)
+[ RUN      ] LifeFixture.cc_print1
+[       OK ] LifeFixture.cc_print1 (0 ms)
+[ RUN      ] LifeFixture.cc_print2
+[       OK ] LifeFixture.cc_print2 (0 ms)
+[ RUN      ] LifeFixture.fc_print1
+[       OK ] LifeFixture.fc_print1 (0 ms)
+[ RUN      ] LifeFixture.fc_print2
+[       OK ] LifeFixture.fc_print2 (0 ms)
+[ RUN      ] LifeFixture.fc_print3
+[       OK ] LifeFixture.fc_print3 (0 ms)
+[ RUN      ] LifeFixture.cell_alive1
+[       OK ] LifeFixture.cell_alive1 (0 ms)
+[ RUN      ] LifeFixture.cell_alive2
+[       OK ] LifeFixture.cell_alive2 (0 ms)
+[ RUN      ] LifeFixture.cell_alive3
+[       OK ] LifeFixture.cell_alive3 (0 ms)
+[ RUN      ] LifeFixture.cell_alive4
+[       OK ] LifeFixture.cell_alive4 (0 ms)
+[ RUN      ] LifeFixture.cell_live_neighbors1
+[       OK ] LifeFixture.cell_live_neighbors1 (0 ms)
+[ RUN      ] LifeFixture.cell_live_neighbors2
+[       OK ] LifeFixture.cell_live_neighbors2 (0 ms)
+[ RUN      ] LifeFixture.cell_live_neighbors3
+[       OK ] LifeFixture.cell_live_neighbors3 (0 ms)
+[ RUN      ] LifeFixture.cell_evolve1
+[       OK ] LifeFixture.cell_evolve1 (0 ms)
+[ RUN      ] LifeFixture.cell_evolve2
+[       OK ] LifeFixture.cell_evolve2 (0 ms)
+[ RUN      ] LifeFixture.cell_evolve3
+[       OK ] LifeFixture.cell_evolve3 (0 ms)
+[ RUN      ] LifeFixture.cell_evolve4
+[       OK ] LifeFixture.cell_evolve4 (0 ms)
+[ RUN      ] LifeFixture.cell_output1
+[       OK ] LifeFixture.cell_output1 (0 ms)
+[ RUN      ] LifeFixture.cell_output2
+[       OK ] LifeFixture.cell_output2 (0 ms)
+[ RUN      ] LifeFixture.cell_output3
+[       OK ] LifeFixture.cell_output3 (0 ms)
+[ RUN      ] LifeFixture.life_add_cell1
+[       OK ] LifeFixture.life_add_cell1 (0 ms)
+[ RUN      ] LifeFixture.life_add_cell2
+[       OK ] LifeFixture.life_add_cell2 (0 ms)
+[ RUN      ] LifeFixture.life_add_cell3
+[       OK ] LifeFixture.life_add_cell3 (0 ms)
+[ RUN      ] LifeFixture.life_add_cell4
+[       OK ] LifeFixture.life_add_cell4 (0 ms)
+[ RUN      ] LifeFixture.life_next_gen1
+[       OK ] LifeFixture.life_next_gen1 (0 ms)
+[ RUN      ] LifeFixture.life_next_gen2
+[       OK ] LifeFixture.life_next_gen2 (1 ms)
+[ RUN      ] LifeFixture.life_next_gen3
+[       OK ] LifeFixture.life_next_gen3 (0 ms)
+[ RUN      ] LifeFixture.life_next_gen4
+[       OK ] LifeFixture.life_next_gen4 (0 ms)
+[ RUN      ] LifeFixture.life_next_gen5
+[       OK ] LifeFixture.life_next_gen5 (0 ms)
+[ RUN      ] LifeFixture.life_next_gen6
+[       OK ] LifeFixture.life_next_gen6 (0 ms)
+[ RUN      ] LifeFixture.life_next_gen7
+[       OK ] LifeFixture.life_next_gen7 (0 ms)
+[ RUN      ] LifeFixture.life_next_gen8
+[       OK ] LifeFixture.life_next_gen8 (0 ms)
+[----------] 66 tests from LifeFixture (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 66 tests from 1 test case ran. (2 ms total)
+[  PASSED  ] 66 tests.
