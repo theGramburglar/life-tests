@@ -1,0 +1,184 @@
+==102949== Memcheck, a memory error detector
+==102949== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==102949== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==102949== Command: ./TestLife
+==102949== 
+Running main() from gtest_main.cc
+[==========] Running 70 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 12 tests from ConwayFixture
+[ RUN      ] ConwayFixture.conliveTest1
+[       OK ] ConwayFixture.conliveTest1 (9 ms)
+[ RUN      ] ConwayFixture.conliveTest2
+[       OK ] ConwayFixture.conliveTest2 (3 ms)
+[ RUN      ] ConwayFixture.conliveTest3
+[       OK ] ConwayFixture.conliveTest3 (3 ms)
+[ RUN      ] ConwayFixture.conliveTest4
+[       OK ] ConwayFixture.conliveTest4 (3 ms)
+[ RUN      ] ConwayFixture.conliveTest5
+[       OK ] ConwayFixture.conliveTest5 (2 ms)
+[ RUN      ] ConwayFixture.conliveTest6
+[       OK ] ConwayFixture.conliveTest6 (3 ms)
+[ RUN      ] ConwayFixture.concopyTest1
+[       OK ] ConwayFixture.concopyTest1 (3 ms)
+[ RUN      ] ConwayFixture.concopyTest2
+[       OK ] ConwayFixture.concopyTest2 (4 ms)
+[ RUN      ] ConwayFixture.concopyTest3
+[       OK ] ConwayFixture.concopyTest3 (3 ms)
+[ RUN      ] ConwayFixture.concopyconTest1
+[       OK ] ConwayFixture.concopyconTest1 (3 ms)
+[ RUN      ] ConwayFixture.concopyconTest2
+[       OK ] ConwayFixture.concopyconTest2 (4 ms)
+[ RUN      ] ConwayFixture.concopyconTest3
+[       OK ] ConwayFixture.concopyconTest3 (3 ms)
+[----------] 12 tests from ConwayFixture (49 ms total)
+
+[----------] 16 tests from FredkinFixture
+[ RUN      ] FredkinFixture.fliveTest1
+[       OK ] FredkinFixture.fliveTest1 (2 ms)
+[ RUN      ] FredkinFixture.fliveTest2
+[       OK ] FredkinFixture.fliveTest2 (2 ms)
+[ RUN      ] FredkinFixture.fliveTest3
+[       OK ] FredkinFixture.fliveTest3 (3 ms)
+[ RUN      ] FredkinFixture.fliveTest4
+[       OK ] FredkinFixture.fliveTest4 (3 ms)
+[ RUN      ] FredkinFixture.fliveTest5
+[       OK ] FredkinFixture.fliveTest5 (3 ms)
+[ RUN      ] FredkinFixture.fliveTest6
+[       OK ] FredkinFixture.fliveTest6 (3 ms)
+[ RUN      ] FredkinFixture.fcopyTest1
+[       OK ] FredkinFixture.fcopyTest1 (3 ms)
+[ RUN      ] FredkinFixture.fcopyTest2
+[       OK ] FredkinFixture.fcopyTest2 (3 ms)
+[ RUN      ] FredkinFixture.fcopyTest3
+[       OK ] FredkinFixture.fcopyTest3 (3 ms)
+[ RUN      ] FredkinFixture.fcopyconTest1
+[       OK ] FredkinFixture.fcopyconTest1 (3 ms)
+[ RUN      ] FredkinFixture.fcopyconTest2
+[       OK ] FredkinFixture.fcopyconTest2 (3 ms)
+[ RUN      ] FredkinFixture.fcopyconTest3
+[       OK ] FredkinFixture.fcopyconTest3 (3 ms)
+[ RUN      ] FredkinFixture.fageTest1
+[       OK ] FredkinFixture.fageTest1 (3 ms)
+[ RUN      ] FredkinFixture.fageTest2
+[       OK ] FredkinFixture.fageTest2 (2 ms)
+[ RUN      ] FredkinFixture.fageTest3
+[       OK ] FredkinFixture.fageTest3 (3 ms)
+[ RUN      ] FredkinFixture.fageTest4
+[       OK ] FredkinFixture.fageTest4 (2 ms)
+[----------] 16 tests from FredkinFixture (45 ms total)
+
+[----------] 24 tests from CellFixture
+[ RUN      ] CellFixture.celiveTest1
+[       OK ] CellFixture.celiveTest1 (3 ms)
+[ RUN      ] CellFixture.celiveTest2
+[       OK ] CellFixture.celiveTest2 (3 ms)
+[ RUN      ] CellFixture.celiveTest3
+[       OK ] CellFixture.celiveTest3 (3 ms)
+[ RUN      ] CellFixture.celiveTest4
+[       OK ] CellFixture.celiveTest4 (3 ms)
+[ RUN      ] CellFixture.celiveTest5
+[       OK ] CellFixture.celiveTest5 (3 ms)
+[ RUN      ] CellFixture.celiveTest6
+[       OK ] CellFixture.celiveTest6 (2 ms)
+[ RUN      ] CellFixture.celiveTest7
+[       OK ] CellFixture.celiveTest7 (4 ms)
+[ RUN      ] CellFixture.celiveTest8
+[       OK ] CellFixture.celiveTest8 (2 ms)
+[ RUN      ] CellFixture.celiveTest9
+[       OK ] CellFixture.celiveTest9 (3 ms)
+[ RUN      ] CellFixture.celiveTest10
+[       OK ] CellFixture.celiveTest10 (3 ms)
+[ RUN      ] CellFixture.celiveTest11
+[       OK ] CellFixture.celiveTest11 (3 ms)
+[ RUN      ] CellFixture.celiveTest12
+[       OK ] CellFixture.celiveTest12 (2 ms)
+[ RUN      ] CellFixture.cecopyTest1
+[       OK ] CellFixture.cecopyTest1 (4 ms)
+[ RUN      ] CellFixture.cecopyTest2
+[       OK ] CellFixture.cecopyTest2 (4 ms)
+[ RUN      ] CellFixture.cecopyTest3
+[       OK ] CellFixture.cecopyTest3 (3 ms)
+[ RUN      ] CellFixture.cecopyTest4
+[       OK ] CellFixture.cecopyTest4 (3 ms)
+[ RUN      ] CellFixture.cecopyTest5
+[       OK ] CellFixture.cecopyTest5 (2 ms)
+[ RUN      ] CellFixture.cecopyTest6
+[       OK ] CellFixture.cecopyTest6 (2 ms)
+[ RUN      ] CellFixture.cecopyconTest1
+[       OK ] CellFixture.cecopyconTest1 (2 ms)
+[ RUN      ] CellFixture.cecopyconTest2
+[       OK ] CellFixture.cecopyconTest2 (3 ms)
+[ RUN      ] CellFixture.cecopyconTest3
+[       OK ] CellFixture.cecopyconTest3 (3 ms)
+[ RUN      ] CellFixture.cecopyconTest4
+[       OK ] CellFixture.cecopyconTest4 (3 ms)
+[ RUN      ] CellFixture.cecopyconTest5
+[       OK ] CellFixture.cecopyconTest5 (3 ms)
+[ RUN      ] CellFixture.cecopyconTest6
+[       OK ] CellFixture.cecopyconTest6 (3 ms)
+[----------] 24 tests from CellFixture (73 ms total)
+
+[----------] 18 tests from LifeFixture
+[ RUN      ] LifeFixture.lifeconTest1
+[       OK ] LifeFixture.lifeconTest1 (78 ms)
+[ RUN      ] LifeFixture.lifeconTest2
+[       OK ] LifeFixture.lifeconTest2 (6 ms)
+[ RUN      ] LifeFixture.liferunTest1
+[       OK ] LifeFixture.liferunTest1 (12 ms)
+[ RUN      ] LifeFixture.liferunTest2
+[       OK ] LifeFixture.liferunTest2 (50 ms)
+[ RUN      ] LifeFixture.lifenbrTest1
+[       OK ] LifeFixture.lifenbrTest1 (3 ms)
+[ RUN      ] LifeFixture.lifenbrTest2
+[       OK ] LifeFixture.lifenbrTest2 (4 ms)
+[ RUN      ] LifeFixture.lifenbrTest3
+[       OK ] LifeFixture.lifenbrTest3 (3 ms)
+[ RUN      ] LifeFixture.lifenbrTest4
+[       OK ] LifeFixture.lifenbrTest4 (3 ms)
+[ RUN      ] LifeFixture.lifenbrTest5
+[       OK ] LifeFixture.lifenbrTest5 (4 ms)
+[ RUN      ] LifeFixture.lifenbrTest6
+[       OK ] LifeFixture.lifenbrTest6 (5 ms)
+[ RUN      ] LifeFixture.lifenbrTest7
+[       OK ] LifeFixture.lifenbrTest7 (3 ms)
+[ RUN      ] LifeFixture.lifenbrTest8
+[       OK ] LifeFixture.lifenbrTest8 (3 ms)
+[ RUN      ] LifeFixture.lifenbrTest9
+[       OK ] LifeFixture.lifenbrTest9 (4 ms)
+[ RUN      ] LifeFixture.lifenbrTest10
+[       OK ] LifeFixture.lifenbrTest10 (3 ms)
+[ RUN      ] LifeFixture.lifenbrTest11
+[       OK ] LifeFixture.lifenbrTest11 (4 ms)
+[ RUN      ] LifeFixture.lifenbrTest12
+[       OK ] LifeFixture.lifenbrTest12 (3 ms)
+[ RUN      ] LifeFixture.lifenbrTest13
+[       OK ] LifeFixture.lifenbrTest13 (4 ms)
+[ RUN      ] LifeFixture.lifenbrTest14
+[       OK ] LifeFixture.lifenbrTest14 (44 ms)
+[----------] 18 tests from LifeFixture (240 ms total)
+
+[----------] Global test environment tear-down
+[==========] 70 tests from 4 test cases ran. (441 ms total)
+[  PASSED  ] 70 tests.
+==102949== 
+==102949== HEAP SUMMARY:
+==102949==     in use at exit: 0 bytes in 0 blocks
+==102949==   total heap usage: 1,586 allocs, 1,586 frees, 170,364 bytes allocated
+==102949== 
+==102949== All heap blocks were freed -- no leaks are possible
+==102949== 
+==102949== For counts of detected and suppressed errors, rerun with: -v
+==102949== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:87.90% of 124
+Branches executed:88.81% of 268
+Taken at least once:64.55% of 268
+Calls executed:66.00% of 200
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 306
+Branches executed:61.05% of 1828
+Taken at least once:30.53% of 1828
+Calls executed:51.00% of 2441
+Creating 'TestLife.c++.gcov'
