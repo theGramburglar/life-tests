@@ -1,0 +1,155 @@
+==901== Memcheck, a memory error detector
+==901== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==901== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==901== Command: ./TestLife
+==901== 
+Running main() from gtest_main.cc
+[==========] Running 48 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 12 tests from LifeFixture
+[ RUN      ] LifeFixture.life_constructor_1
+Generation = 0, Population = 5.
+[       OK ] LifeFixture.life_constructor_1 (75 ms)
+[ RUN      ] LifeFixture.life_constructor_2
+Generation = 0, Population = 10.
+[       OK ] LifeFixture.life_constructor_2 (9 ms)
+[ RUN      ] LifeFixture.life_constructor_3
+Generation = 0, Population = 5.
+[       OK ] LifeFixture.life_constructor_3 (53 ms)
+[ RUN      ] LifeFixture.life_turn_life_1
+Generation = 1, Population = 6.
+[       OK ] LifeFixture.life_turn_life_1 (15 ms)
+[ RUN      ] LifeFixture.life_turn_life_2
+Generation = 1, Population = 8.
+[       OK ] LifeFixture.life_turn_life_2 (8 ms)
+[ RUN      ] LifeFixture.life_turn_life_3
+Generation = 2, Population = 3.
+[       OK ] LifeFixture.life_turn_life_3 (12 ms)
+[ RUN      ] LifeFixture.life_print_grid_1
+Generation = 0, Population = 20.
+[       OK ] LifeFixture.life_print_grid_1 (8 ms)
+[ RUN      ] LifeFixture.life_print_grid_2
+Generation = 0, Population = 0.
+[       OK ] LifeFixture.life_print_grid_2 (8 ms)
+[ RUN      ] LifeFixture.life_print_grid_3
+Generation = 0, Population = 0.
+[       OK ] LifeFixture.life_print_grid_3 (7 ms)
+[ RUN      ] LifeFixture.life_count_alive_cells_1
+[       OK ] LifeFixture.life_count_alive_cells_1 (6 ms)
+[ RUN      ] LifeFixture.life_count_alive_cells_2
+[       OK ] LifeFixture.life_count_alive_cells_2 (6 ms)
+[ RUN      ] LifeFixture.life_count_alive_cells_3
+[       OK ] LifeFixture.life_count_alive_cells_3 (5 ms)
+[----------] 12 tests from LifeFixture (237 ms total)
+
+[----------] 12 tests from CellFixture
+[ RUN      ] CellFixture.cell_constructor_1
+[       OK ] CellFixture.cell_constructor_1 (5 ms)
+[ RUN      ] CellFixture.cell_constructor_2
+[       OK ] CellFixture.cell_constructor_2 (3 ms)
+[ RUN      ] CellFixture.cell_constructor_3
+[       OK ] CellFixture.cell_constructor_3 (4 ms)
+[ RUN      ] CellFixture.cell_print_1
+[       OK ] CellFixture.cell_print_1 (6 ms)
+[ RUN      ] CellFixture.cell_print_2
+[       OK ] CellFixture.cell_print_2 (5 ms)
+[ RUN      ] CellFixture.cell_print_3
+[       OK ] CellFixture.cell_print_3 (5 ms)
+[ RUN      ] CellFixture.cell_evolution_1
+[       OK ] CellFixture.cell_evolution_1 (3 ms)
+[ RUN      ] CellFixture.cell_evolution_2
+[       OK ] CellFixture.cell_evolution_2 (3 ms)
+[ RUN      ] CellFixture.cell_evolution_3
+[       OK ] CellFixture.cell_evolution_3 (4 ms)
+[ RUN      ] CellFixture.cell_is_alive_1
+[       OK ] CellFixture.cell_is_alive_1 (3 ms)
+[ RUN      ] CellFixture.cell_is_alive_2
+[       OK ] CellFixture.cell_is_alive_2 (3 ms)
+[ RUN      ] CellFixture.cell_is_alive_3
+[       OK ] CellFixture.cell_is_alive_3 (4 ms)
+[----------] 12 tests from CellFixture (65 ms total)
+
+[----------] 12 tests from ConwayCellFixture
+[ RUN      ] ConwayCellFixture.conway_cell_constructor_1
+[       OK ] ConwayCellFixture.conway_cell_constructor_1 (2 ms)
+[ RUN      ] ConwayCellFixture.conway_cell_constructor_2
+[       OK ] ConwayCellFixture.conway_cell_constructor_2 (2 ms)
+[ RUN      ] ConwayCellFixture.conway_cell_constructor_3
+[       OK ] ConwayCellFixture.conway_cell_constructor_3 (2 ms)
+[ RUN      ] ConwayCellFixture.conway_cell_print_1
+[       OK ] ConwayCellFixture.conway_cell_print_1 (3 ms)
+[ RUN      ] ConwayCellFixture.conway_cell_print_2
+[       OK ] ConwayCellFixture.conway_cell_print_2 (3 ms)
+[ RUN      ] ConwayCellFixture.conway_cell_print_3
+[       OK ] ConwayCellFixture.conway_cell_print_3 (3 ms)
+[ RUN      ] ConwayCellFixture.conway_cell_evolution_1
+[       OK ] ConwayCellFixture.conway_cell_evolution_1 (2 ms)
+[ RUN      ] ConwayCellFixture.conway_cell_evolution_2
+[       OK ] ConwayCellFixture.conway_cell_evolution_2 (2 ms)
+[ RUN      ] ConwayCellFixture.conway_cell_evolution_3
+[       OK ] ConwayCellFixture.conway_cell_evolution_3 (2 ms)
+[ RUN      ] ConwayCellFixture.conway_cell_is_alive_1
+[       OK ] ConwayCellFixture.conway_cell_is_alive_1 (2 ms)
+[ RUN      ] ConwayCellFixture.conway_cell_is_alive_2
+[       OK ] ConwayCellFixture.conway_cell_is_alive_2 (1 ms)
+[ RUN      ] ConwayCellFixture.conway_cell_is_alive_3
+[       OK ] ConwayCellFixture.conway_cell_is_alive_3 (2 ms)
+[----------] 12 tests from ConwayCellFixture (40 ms total)
+
+[----------] 12 tests from FredkinCellFixture
+[ RUN      ] FredkinCellFixture.fredkin_cell_constructor_1
+[       OK ] FredkinCellFixture.fredkin_cell_constructor_1 (2 ms)
+[ RUN      ] FredkinCellFixture.fredkin_cell_constructor_2
+[       OK ] FredkinCellFixture.fredkin_cell_constructor_2 (2 ms)
+[ RUN      ] FredkinCellFixture.fredkin_cell_constructor_3
+[       OK ] FredkinCellFixture.fredkin_cell_constructor_3 (3 ms)
+[ RUN      ] FredkinCellFixture.fredkin_cell_print_1
+[       OK ] FredkinCellFixture.fredkin_cell_print_1 (2 ms)
+[ RUN      ] FredkinCellFixture.fredkin_cell_print_2
+[       OK ] FredkinCellFixture.fredkin_cell_print_2 (3 ms)
+[ RUN      ] FredkinCellFixture.fredkin_cell_print_3
+[       OK ] FredkinCellFixture.fredkin_cell_print_3 (3 ms)
+[ RUN      ] FredkinCellFixture.fredkin_cell_evolution_1
+[       OK ] FredkinCellFixture.fredkin_cell_evolution_1 (2 ms)
+[ RUN      ] FredkinCellFixture.fredkin_cell_evolution_2
+[       OK ] FredkinCellFixture.fredkin_cell_evolution_2 (2 ms)
+[ RUN      ] FredkinCellFixture.fredkin_cell_evolution_3
+[       OK ] FredkinCellFixture.fredkin_cell_evolution_3 (2 ms)
+[ RUN      ] FredkinCellFixture.fredkin_cell_is_alive_1
+[       OK ] FredkinCellFixture.fredkin_cell_is_alive_1 (2 ms)
+[ RUN      ] FredkinCellFixture.fredkin_cell_is_alive_2
+[       OK ] FredkinCellFixture.fredkin_cell_is_alive_2 (2 ms)
+[ RUN      ] FredkinCellFixture.fredkin_cell_is_alive_3
+[       OK ] FredkinCellFixture.fredkin_cell_is_alive_3 (2 ms)
+[----------] 12 tests from FredkinCellFixture (38 ms total)
+
+[----------] Global test environment tear-down
+[==========] 48 tests from 4 test cases ran. (429 ms total)
+[  PASSED  ] 48 tests.
+==901== 
+==901== HEAP SUMMARY:
+==901==     in use at exit: 72,728 bytes in 2 blocks
+==901==   total heap usage: 1,300 allocs, 1,298 frees, 242,514 bytes allocated
+==901== 
+==901== LEAK SUMMARY:
+==901==    definitely lost: 24 bytes in 1 blocks
+==901==    indirectly lost: 0 bytes in 0 blocks
+==901==      possibly lost: 0 bytes in 0 blocks
+==901==    still reachable: 72,704 bytes in 1 blocks
+==901==         suppressed: 0 bytes in 0 blocks
+==901== Rerun with --leak-check=full to see details of leaked memory
+==901== 
+==901== For counts of detected and suppressed errors, rerun with: -v
+==901== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:99.24% of 132
+Branches executed:100.00% of 126
+Taken at least once:88.89% of 126
+Calls executed:95.45% of 110
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 487
+Branches executed:70.45% of 1976
+Taken at least once:36.44% of 1976
+Calls executed:57.94% of 2109
+Creating 'TestLife.c++.gcov'
