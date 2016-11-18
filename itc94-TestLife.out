@@ -1,0 +1,137 @@
+==5856== Memcheck, a memory error detector
+==5856== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==5856== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==5856== Command: ./TestLife
+==5856==
+Running main() from gtest_main.cc
+[==========] Running 48 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 48 tests from LifeFixture
+[ RUN      ] LifeFixture.add1
+[       OK ] LifeFixture.add1 (23 ms)
+[ RUN      ] LifeFixture.add2
+[       OK ] LifeFixture.add2 (14 ms)
+[ RUN      ] LifeFixture.add3
+[       OK ] LifeFixture.add3 (14 ms)
+[ RUN      ] LifeFixture.add4
+[       OK ] LifeFixture.add4 (3 ms)
+[ RUN      ] LifeFixture.at1
+[       OK ] LifeFixture.at1 (6 ms)
+[ RUN      ] LifeFixture.at2
+[       OK ] LifeFixture.at2 (5 ms)
+[ RUN      ] LifeFixture.at3
+[       OK ] LifeFixture.at3 (4 ms)
+[ RUN      ] LifeFixture.at4
+[       OK ] LifeFixture.at4 (7 ms)
+[ RUN      ] LifeFixture.at5
+[       OK ] LifeFixture.at5 (7 ms)
+[ RUN      ] LifeFixture.at6
+[       OK ] LifeFixture.at6 (4 ms)
+[ RUN      ] LifeFixture.at7
+[       OK ] LifeFixture.at7 (4 ms)
+[ RUN      ] LifeFixture.at8
+[       OK ] LifeFixture.at8 (3 ms)
+[ RUN      ] LifeFixture.population1
+[       OK ] LifeFixture.population1 (5 ms)
+[ RUN      ] LifeFixture.population2
+[       OK ] LifeFixture.population2 (5 ms)
+[ RUN      ] LifeFixture.population3
+[       OK ] LifeFixture.population3 (5 ms)
+[ RUN      ] LifeFixture.population4
+[       OK ] LifeFixture.population4 (3 ms)
+[ RUN      ] LifeFixture.population5
+[       OK ] LifeFixture.population5 (3 ms)
+[ RUN      ] LifeFixture.population6
+[       OK ] LifeFixture.population6 (3 ms)
+[ RUN      ] LifeFixture.population7
+[       OK ] LifeFixture.population7 (3 ms)
+[ RUN      ] LifeFixture.population8
+[       OK ] LifeFixture.population8 (3 ms)
+[ RUN      ] LifeFixture.neighbors1
+[       OK ] LifeFixture.neighbors1 (25 ms)
+[ RUN      ] LifeFixture.neighbors2
+[       OK ] LifeFixture.neighbors2 (14 ms)
+[ RUN      ] LifeFixture.neighbors3
+[       OK ] LifeFixture.neighbors3 (8 ms)
+[ RUN      ] LifeFixture.neighbors4
+[       OK ] LifeFixture.neighbors4 (12 ms)
+[ RUN      ] LifeFixture.loop1
+[       OK ] LifeFixture.loop1 (28 ms)
+[ RUN      ] LifeFixture.loop2
+[       OK ] LifeFixture.loop2 (3 ms)
+[ RUN      ] LifeFixture.loop3
+[       OK ] LifeFixture.loop3 (3 ms)
+[ RUN      ] LifeFixture.loop4
+[       OK ] LifeFixture.loop4 (3 ms)
+[ RUN      ] LifeFixture.alive1
+[       OK ] LifeFixture.alive1 (2 ms)
+[ RUN      ] LifeFixture.alive2
+[       OK ] LifeFixture.alive2 (2 ms)
+[ RUN      ] LifeFixture.alive3
+[       OK ] LifeFixture.alive3 (2 ms)
+[ RUN      ] LifeFixture.alive4
+[       OK ] LifeFixture.alive4 (2 ms)
+[ RUN      ] LifeFixture.alive5
+[       OK ] LifeFixture.alive5 (3 ms)
+[ RUN      ] LifeFixture.alive6
+[       OK ] LifeFixture.alive6 (2 ms)
+[ RUN      ] LifeFixture.alive7
+[       OK ] LifeFixture.alive7 (2 ms)
+[ RUN      ] LifeFixture.alive8
+[       OK ] LifeFixture.alive8 (2 ms)
+[ RUN      ] LifeFixture.clone1
+[       OK ] LifeFixture.clone1 (2 ms)
+[ RUN      ] LifeFixture.clone2
+[       OK ] LifeFixture.clone2 (2 ms)
+[ RUN      ] LifeFixture.clone3
+[       OK ] LifeFixture.clone3 (1 ms)
+[ RUN      ] LifeFixture.clone4
+[       OK ] LifeFixture.clone4 (2 ms)
+[ RUN      ] LifeFixture.life_print_conway1
+[       OK ] LifeFixture.life_print_conway1 (13 ms)
+[ RUN      ] LifeFixture.life_print_conway2
+[       OK ] LifeFixture.life_print_conway2 (11 ms)
+[ RUN      ] LifeFixture.life_print_conway3
+[       OK ] LifeFixture.life_print_conway3 (8 ms)
+[ RUN      ] LifeFixture.life_print_conway4
+[       OK ] LifeFixture.life_print_conway4 (7 ms)
+[ RUN      ] LifeFixture.life_print_cell1
+[       OK ] LifeFixture.life_print_cell1 (13 ms)
+[ RUN      ] LifeFixture.life_print_cell2
+[       OK ] LifeFixture.life_print_cell2 (21 ms)
+[ RUN      ] LifeFixture.life_print_cell3
+[       OK ] LifeFixture.life_print_cell3 (9 ms)
+[ RUN      ] LifeFixture.life_print_cell4
+[       OK ] LifeFixture.life_print_cell4 (12 ms)
+[----------] 48 tests from LifeFixture (366 ms total)
+
+[----------] Global test environment tear-down
+[==========] 48 tests from 1 test case ran. (413 ms total)
+[  PASSED  ] 48 tests.
+==5856==
+==5856== HEAP SUMMARY:
+==5856==     in use at exit: 73,184 bytes in 31 blocks
+==5856==   total heap usage: 883 allocs, 852 frees, 197,012 bytes allocated
+==5856==
+==5856== LEAK SUMMARY:
+==5856==    definitely lost: 480 bytes in 30 blocks
+==5856==    indirectly lost: 0 bytes in 0 blocks
+==5856==      possibly lost: 0 bytes in 0 blocks
+==5856==    still reachable: 72,704 bytes in 1 blocks
+==5856==         suppressed: 0 bytes in 0 blocks
+==5856== Rerun with --leak-check=full to see details of leaked memory
+==5856==
+==5856== For counts of detected and suppressed errors, rerun with: -v
+==5856== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:76.62% of 154
+Branches executed:85.11% of 282
+Taken at least once:67.73% of 282
+Calls executed:81.82% of 176
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 360
+Branches executed:73.30% of 1498
+Taken at least once:36.65% of 1498
+Calls executed:61.80% of 1945
+Creating 'TestLife.c++.gcov'
